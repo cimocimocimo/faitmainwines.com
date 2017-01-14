@@ -1,0 +1,908 @@
+/*
+
+vinespring stylesheet
+
+author:   	vin, vinagency.com
+version:  	2.00
+
+contents:
+			store
+			store layouts
+
+			item/product page
+			vinespring
+
+			account links
+			modal
+			mini cart
+			general forms
+			order process
+			allocations
+			account
+			media queries
+
+*/
+
+
+
+/*
+vs2
+
+.vs2-form
+.vs2-mediumForm
+.vs2-row
+
+#vs-account-main
+#vs-account-nav
+
+#vs-cart-confirmation
+
+*/
+
+
+
+
+
+/* store */
+
+.store-grid {
+}
+.store-item {
+margin-bottom: 48px;
+/*overflow: hidden;*/
+}
+
+.vsMoreLink {
+margin-bottom:2em;
+color:#900;
+text-decoration: none;
+}
+.vsSoldOut {
+color:#990000 !important;
+}
+.vsBottleSize {
+display:inline-block;
+width:49%;
+color:#aaa;
+}
+.vsPrice {
+width:49%;
+display:inline-block;
+}
+.vsInputQuantity {
+width:40px;
+text-align:center;
+font-size:.9em;
+vertical-align:top;
+margin-top:2px;
+padding:.5em 4px;
+float:left;
+background-color:transparent;
+border:1px solid transparent;
+border-bottom:1px solid #ccc;
+}
+.vsInputQuantity:focus {
+border:1px solid transparent;
+border-bottom:1px solid #aaa;
+color:#111;
+}
+.vsListImage a {
+display: block;
+}
+.vsSelectQuantity {
+width:60px !important;
+font-size:.9em;
+vertical-align:top;
+margin-top:2px;
+padding:.5em 4px;
+}
+.vsSelectQuantity:focus {
+color:#111;
+border:1px solid #aaa;
+}
+.vsFormAddAllocation {
+width:50%;
+}
+.vsFormAddAllocation label,
+.vsFormAddAllocation input,
+.vsFormAddAllocation select {
+float:left;
+}
+.vsFormAdd {
+max-width:300px;
+}
+.vsFormAdd h3 {
+text-align: left;
+}
+.vsFormAdd p {
+margin: 0;
+overflow:hidden;
+}
+.vsLabelQuantity {
+width:66%;
+float:left;
+margin:0;
+padding:.5em 0;
+}
+.vsFormAdd label input {
+float:left;
+}
+.vsButtonAdd {
+margin:1em auto;
+/*width:100%;
+padding-left:0;
+padding-right:0;*/
+}
+
+
+/* item/product page */
+
+.store-page {
+}
+.store-page .vsListImage {
+width:20%;
+float:left;
+margin-right:5%;
+}
+
+.store-page .vsItemDetails {
+width:75%;
+float:left;
+}
+.store-page .vsDescription,
+.store-page .vsAttribute {
+margin-bottom:36px;
+}
+.store-page .vsItemText {
+width:60%;
+float:left;
+}
+.store-page .vsFormAdd {
+float:left;
+width:35%;
+margin-left:5%;
+}
+
+
+
+/* store layouts */
+
+.vsListImage {
+text-align: center;
+margin-bottom:18px;
+}
+
+
+/* store-grid */
+
+.store-grid .vsItemText {
+/*float:left;
+width:70%;*/
+}
+.store-grid .vsListImage {
+float:right;
+width:27%;
+margin-left:3%;
+}
+.store-grid .vsItemDetails {
+float:left;
+width:70%;
+}
+.store-grid .vsListImage img {
+width:75px;
+height: auto;
+}
+.store-grid .vsFormAdd {
+/*float:left;
+width:70%;*/
+}
+.store-page .vsFormAddFooter,
+.store-grid .vsFormAddFooter {
+text-align:left;
+}
+.store-grid h2.vsTitle {
+clear:none;
+}
+.store-grid h2.vsTitle,
+.store-grid h3 {
+text-align: left;
+}
+
+
+/* store-rows */
+
+.store-rows .store-item {
+overflow: hidden;
+}
+.store-rows .vsListImage {
+float:left;
+width:27%;
+margin-right:3%;
+}
+.store-rows .vsItemDetails {
+float:left;
+width:70%;
+}
+.store-rows .vsListImage img {
+width:90px;
+height: auto;
+}
+.store-rows .vsItemText {
+float:left;
+width:60%;
+}
+.store-rows .vsFormAdd {
+float:left;
+width:35%;
+margin-left:5%;
+margin-top:8px;
+}
+.store-rows h2.vsTitle,
+.store-rows h3 {
+text-align: left;
+}
+
+
+
+
+/* responsive store layouts */
+
+@media only screen and (max-width: 768px){
+
+.store-page .vsItemDetails,
+.store-page .vsListImage,
+.store-grid .vsItemDetails,
+.store-rows .vsItemDetails {
+width:auto;
+float:none;
+margin-left:0;
+margin-right:0;
+}
+.store-page .vsItemText {
+width:auto;
+float:none;
+margin-left:0;
+}
+.store-page .vsFormAdd {
+width:auto;
+float:none;
+margin-left:0;
+}
+
+.store-grid .vsListImage,
+.store-rows .vsListImage,
+.store-page .vsListImage {
+text-align: center;
+float:none;
+width:auto;
+margin-left:0;
+}
+.store-grid .vsFormAdd,
+.store-rows .vsFormAdd,
+.store-page .vsFormAdd {
+margin-left:0;
+margin-right:0;
+float:none;
+width:auto;
+max-width:285px;
+}
+.store-grid .vsItemText,
+.store-rows .vsItemText,
+.store-page .vsItemText {
+margin-left:auto;
+margin-right:auto;
+float:none;
+width:auto;
+}
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 999px){
+
+.store-grid .vsFormAdd,
+.store-rows .vsFormAdd,
+.store-grid .vsItemText,
+.store-rows .vsItemText {
+float:none;
+width:auto;
+margin-left: 0;
+}
+.store-rows .vsFormAdd {
+margin-top:36px;
+}
+
+
+/*.store-grid,
+.store-rows,
+.store-page {
+width:50%;
+min-width:450px;
+margin-left:auto;
+margin-right:auto;
+float:none;
+}
+.store-grid .store-item,
+.store-rows .store-item {
+float:none;
+width:auto;
+}
+.store-grid .vsListImage,
+.store-rows .vsListImage,
+.store-page .vsListImage {
+text-align: center;
+float:none;
+width:auto;
+margin-left:0;
+}
+.store-grid .vsFormAdd,
+.store-rows .vsFormAdd,
+.store-page .vsFormAdd {
+margin-left:auto;
+margin-right:auto;
+float:none;
+width:188px;
+}
+.store-grid .vsItemText,
+.store-rows .vsItemText,
+.store-page .vsItemText {
+margin-left:auto;
+margin-right:auto;
+float:none;
+width:auto;
+}
+*/
+}
+
+
+
+
+
+/* vinespring */
+
+#fb-root {
+display:none;
+}
+.vs-field {
+margin-bottom: 1em;
+}
+.sf-sub-indicator {
+display:none;
+}
+#vsAccountLinks,
+.vsError {
+background-color:transparent !important;
+}
+#vsAccountLinks td {
+padding:0 5px;
+font-size:.90em;
+}
+#vsAccountLinks img {
+border:1px solid #5087B0;
+padding:1px;
+}
+.vsError {
+border:none;/*1px dotted red*/
+padding:none !important;
+}
+div.vsParagraph,
+div.vs-p {
+margin-bottom:1.5em !important;
+padding:none !important;
+/*width:460px;*/
+}
+#vsFacebookLoginLink {
+display:none;
+}
+.vsForm  {
+margin-bottom:1.5em;
+}
+.vsMyAccountLinkList {}
+.vsValidate label {
+/*width:170px;*/
+padding:.5em 0;
+}
+.vsFull,
+.vsThird {
+margin-bottom:6px;
+}
+#vsBillingAddress {
+float:left;
+}
+
+
+/* account links */
+
+#vsAccountLinks {
+position:absolute;/*fixed;*/
+padding:0;
+z-index:1000;
+right:0;
+top:10px;
+overflow:hidden;
+}
+#vsAccountLinks div {
+float:left;
+margin-left:0;
+margin-right:10px;
+font-size:12px;
+line-height:1.5em;
+}
+#vsAccountLinks #vsCartItemCountCell {
+margin-right:0;
+}
+#vsAccountLinks a {
+color:#aaa;
+text-decoration: none !important;
+}
+
+
+/* modal */
+
+#vsModal {
+background-color:#fff;
+display:none;
+position:fixed;
+left:50%;
+top:100px;
+padding:20px;
+margin-left:-260px;
+width:480px;
+min-width:480px;
+max-width:480px;
+outline:10000px solid #000;
+outline:10000px solid rgba(0, 0, 0, .8);
+z-index:1010;
+}
+#vsModal td {
+color:#111;
+}
+#vsMiniCartHeader {
+color:#111;
+}
+
+.vsAccountLeft {
+width:250px;
+float:left;
+}
+.vsAccountRight {
+width:700px;
+float:left;
+}
+#vsFacebookLoginLink {
+background:url(https://facebook.com/favicon.ico) no-repeat 2px;
+padding-left:25px;
+display:none;
+}
+#vsLinkButton {
+font-size:.85em;
+}
+#vsModal a,
+#vsModal a:link,
+#vsModal a:visited,
+#vsModal a:hover,
+#vsModal a:focus {
+color:#aaa;
+}
+
+#vsCartButtons {
+padding:10px 0 0 10px !important;
+border-bottom:none !important;
+}
+#vsMiniCartTotals td {
+border-top:1px solid #ccc;
+border-bottom:none !important;
+}
+.vsMiniCartQuantityBox {
+display:block;
+}
+#vsCartButtons {
+text-align:right;
+text-transform:uppercase;
+}
+#vsUpdateCartButton,
+#vsUpdateCartButton:link,
+#vsUpdateCartButton:visited {
+margin-left:5px;
+padding:5px 10px;
+color:#111 !important;
+background-color:#fff;
+border:1px solid #fff;
+display:inline-block;
+text-decoration: none;
+}
+#vsUpdateCartButton:hover,
+#vsUpdateCartButton:focus {
+color:#111 !important;
+background-color:#f1f1f1;/*#f8efca;*/
+border:1px solid #ddd;/*#e7debc*/
+}
+#vsPlaceOrderCartButton,
+#vsPlaceOrderCartButton:link,
+#vsPlaceOrderCartButton:visited {
+background-color:#eee;/*#f8efca;*/
+border:1px solid #ccc;/*#e7debc;*/
+color:#111 !important;
+margin-left:5px;
+padding:5px 10px;
+display:inline-block;
+text-decoration: none;
+border-radius: 2px;
+}
+#vsPlaceOrderCartButton:hover,
+#vsPlaceOrderCartButton:focus {
+background-color:#f5f5f5;
+border:1px solid #ddd;
+color:#111;
+}
+
+
+/* mini cart */
+
+#vsMiniCart {
+width:100%;
+padding:0 10px 10px 10px;
+border-collapse:collapse;
+}
+#vsMiniCart th {
+border-bottom:1px solid #ccc;
+text-transform:capitalize;
+}
+#vsMiniCart th,
+#vsMiniCart td {
+padding:8px;
+vertical-align:middle;
+font-size:13px;
+line-height:15px;
+}
+#vsMiniCart td.vsLeft {
+text-align:left;
+min-width:200px;
+white-space:normal;
+}
+#vsMiniCart input {
+text-align:center;
+width:30px;
+padding:2px;
+background-color:#fff;
+color:#111;
+font-weight:bold;
+border:1px solid #ccc;
+}
+#vsMiniCart input:focus {
+border:1px solid #aaa;
+}
+#vsMiniCart select {
+padding:2px;
+width:60px;
+}
+#vsCartButtons {
+padding:20px 0 0 0;
+}
+#vsMiniCartTotals > td {
+/*border-top:1px solid #333;*/
+}
+#vsWishListText {
+/*font-size:.80em;
+color:#888;
+font-style:italic;*/
+display:block;
+}
+.vsMiniCartQuantityBox {
+display:block;
+}
+#vsModalClose {
+float:right;
+text-transform:uppercase;
+font-size:13px;
+}
+#vsModalClose a {
+text-decoration: none;
+}
+
+
+/* general forms */
+
+.vsForm {
+width:100%;
+max-width: 492px;
+margin-left:auto;
+margin-right:auto;
+}
+.vsForm label {
+display: block;
+padding:5px 0;
+/*margin-top: 8px;*/
+}
+input.vsText,
+input.vs-text,
+textarea.vsText,
+select.vsSelect {
+width:100%;
+max-width: 478px;
+padding: 5px;
+color:#111;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-ms-box-sizing:border-box;
+box-sizing:border-box;
+}
+.vsClear { clear:both; }
+.vsForm button { margin: 0 }
+.vsForm label.error { color: red !important; margin-bottom: 15px; }
+.vsForm input.error { border: 1px solid red }
+.vsError {
+color: red;
+border: 1px solid red;
+background: transparent;
+padding: 8px;
+}
+select.vsSelect { padding: .25em 4px; }
+input.vsSmall { width: 30px; text-align: center }
+.vsText,
+.vs-text {
+padding: 5px;
+}
+.vsForm select {
+padding: 4px;
+}
+.vsForm label {
+display: block;
+clear: both;
+}
+.vsFull, .vsHalf, .vsThird { margin-bottom: 8px; }
+.vsFull { width: 492px; }
+.vsFull input { width: 478px; }
+.vsFull select { width: 488px; }
+.vsHalf { width: 244px; float: left }
+.vsHalf input { width: 230px; }
+.vsHalf select { width: 242px; }
+.vsRight { float: right }
+.vsThird { width: 164px; float: left }
+.vsThird input { width: 149px; }
+.vsThird select { width: 157px; }
+.vsMiddle { margin: 0 2px 8px 2px; width: 160px; }
+.vsExtraBottom { margin-bottom: 30px; }
+input.error, select.error {
+background: #fff0f0;
+border: 1px solid red;
+}
+label.error { color: red }
+.error a,
+.error a:link,
+.error a:hover,
+.error a:visited {
+color:red;
+}
+.vsFull label, .vsHalf label, .vsThird label { width:100%; }
+
+
+/* order process */
+
+#vsOrderForm {
+max-width: 800px;
+margin: 0 auto;
+overflow: hidden;
+}
+#vsOrderFormContent { padding: 10px 0; }
+#vsOrderFormLeft {
+margin-bottom: 1.5em;
+/*width: 180px;
+float: left;
+min-height: 400px;
+margin-top: 0;
+margin-right:60px;*/
+}
+#vsOrderFormRight {
+/*width: 548px; float: left; min-height: 400px;*/
+}
+#vsOrderFormLeft div {
+font-size:13px;
+display: inline-block;
+/*padding: 5px; height: 20px;*/
+text-transform: uppercase;
+}
+#vsOrderFormLeft div.vsActive {
+/*background: url(/content/images/arrow.gif) right;*/
+color: #111;
+background-color:#eee;
+}
+#vsOrderFormLeft a {
+padding:.5em 15px;
+text-decoration: none;
+}
+.vsOrderFormButtons { padding: 20px 0; clear: both }
+.vsOrderFormButtons button { padding: 5px; min-width: 100px; margin-right: 5px; }
+#vsOrderForm .vsRadio { display: inline; width: 20px; }
+ul.vsDisplayList { list-style: none }
+#vsOrderItems { width: 100%; border-collapse: collapse; margin: 0; padding: 0 }
+#vsOrderItems td { padding: 5px; }
+/*.vsOrderFormHeader { padding: 5px; }
+button#vsPlaceOrder { padding: 8px; }*/
+.vsOrderReviewBlock {
+margin-bottom: 18px;
+width:50%;
+float:left;
+} 
+.vsIndent { padding: 0; }
+#vsOrderForm h3 { clear: both; }
+
+table#vsOrderItems,
+table#vsOrderHistory {
+width:100%;
+margin:0em 0 4em;
+border-top:2px solid #ccc;
+}
+table#vsOrderItems th,
+table#vsOrderItems td,
+table#vsOrderHistory th,
+table#vsOrderHistory td {
+padding: 5px 5px 5px 0;
+border-bottom:1px solid #ccc;
+text-align:left;
+}
+table#vsOrderItems tr:last-child td,
+table#vsOrderHistory tr:last-child td {
+border-bottom:none;
+}
+.vsOrderFormTotal {
+font-weight: bold;
+}
+
+
+
+/* allocations */
+
+div.vsAllocations > div { clear: both }
+div.vsAllocationImage { float: left }
+div.vsAllocationDetail { float: left }
+
+table.allocation-table {
+width:100%;
+margin:3em 0 4em;
+}
+table.allocation-table tr:last-child td {
+border:none;
+}
+table.allocation-table th {
+font-weight:normal;
+text-transform:uppercase;
+}
+table.allocation-table th,
+table.allocation-table td {
+padding: 5px 5px 5px 0;
+border-bottom:1px solid #ccc;
+text-align:left;
+}
+table.allocation-table th {
+border-bottom:2px solid #ccc;
+}
+.wishlist-quantity {
+width:30px;
+text-align:center;
+}
+
+
+/* account */
+
+#vs-account-nav {
+margin-bottom: 3em;
+}
+#vs-account-main {
+}
+#vs-account-nav a {
+display:block;
+padding:.5em 15px;
+text-decoration: none;
+color:#111;
+border:1px solid transparent;
+}
+#vs-account-nav a:hover,
+#vs-account-nav a:focus {
+border:1px solid #ccc;
+color:#666;
+}
+#vs-account-nav .active a {
+border:1px solid #ccc;
+background-color: #f5f5f5;
+color:#111;
+}
+#vs-account-nav div {
+font-size:13px;
+text-transform: uppercase;
+display:inline-block;
+}
+#vsOrderFormLeft div {
+padding:5px 10px;
+display:inline-block;
+/*text-align:center;
+text-transform:uppercase;*/
+}
+.vsAddressContainer {
+margin-bottom: 2em;
+/*overflow: hidden;*/
+}
+.vsAddressContainer:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+* html .vsAddressContainer { zoom: 1; }
+
+/* clubs */
+
+.vsClubItem {
+margin-bottom: 3em
+}
+
+
+/* vinespring responsive */
+
+@media only screen and (max-width:770px) {
+	
+#vsModal {
+background-color:#fff;
+display:none;
+position:fixed;
+left:0;
+top:0;
+padding:10px;
+margin-left:0;
+width:100%;
+min-width:100%;
+max-width:100%;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-ms-box-sizing:border-box;
+-o-box-sizing:border-box;
+box-sizing:border-box;
+}
+#vsMiniCart {
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-ms-box-sizing:border-box;
+-o-box-sizing:border-box;
+box-sizing:border-box;
+}
+#vsMiniCart td.vsLeft {
+min-width:0;
+}
+.vsForm,
+#vsOrderFormContent,
+#vsOrderFormLeft,
+#vsOrderFormRight,
+.vsFull,
+.vsHalf,
+.vsThird {
+float:none;
+width:auto;
+margin-left:0;
+margin-right:0;
+padding-left:0;
+padding-right:0;
+}
+input.vsText,
+.vs-text,
+.vsForm select,
+textarea {
+width:100% !important;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-ms-box-sizing:border-box;
+-o-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+#vsOrderFormContent {
+/*border-top:2px solid #111;*/
+margin-top:1em;
+/*padding-top:1em;*/
+}
+#vsBillingAddress {
+float:none;
+}
+
+}
+

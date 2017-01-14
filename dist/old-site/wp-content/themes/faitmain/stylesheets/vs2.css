@@ -1,0 +1,535 @@
+/*
+
+vinespring stylesheet
+
+author:   	vin, vinagency.com
+version:  	2.03
+
+contents:
+			general
+			account links
+			account
+			registration
+			cart
+			products
+			store layouts
+			allocations
+			media queries
+			changelog
+
+
+*/
+
+
+
+/* =general */
+
+.vs2-required {
+display: inline-block;
+padding: 0 3px;
+}
+.vs2-error, .vs2-error a, .vs2-error a:link {
+color: #aa0000;
+}
+label > span {
+display: block;
+}
+.vs2-loading {
+text-align: center;
+}
+.vs2x-mediumForm {
+margin-left:auto;
+margin-right:auto;
+}
+
+
+/* =account links */
+
+#vs-accountlinks {
+font-size: 13px;
+}
+#vs2-accountLinks > span {
+display: inline-block;
+}
+#vs2-accountLinks > span a {
+display: inline-block;
+padding: 5px;
+text-decoration: none;
+}
+/*#vs2-accountLinks-user:before,
+#vs2-accountLinks-cart:before {
+font-family: 'Icons';
+font-style: normal;
+font-weight: normal;
+speak: none;
+display: inline-block;
+text-decoration: inherit;
+width: 1em;
+margin-right: 0.2em;
+text-align: center;
+line-height: 1em;
+margin-left: 0.2em;
+}
+#vs2-accountLinks-user:before {
+content: '👤';
+}
+#vs2-accountLinks-cart:before {
+content: '\e73d';
+}*/
+#vs2-cart-confirmation-custom,
+#vs2-cart-confirmation {
+display: none;
+position: fixed;
+z-index: 2000;
+top: -1px;
+right: -1px;
+padding: 15px 20px 0;
+width:295px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+-o-box-sizing: border-box;
+box-sizing:border-box;
+}
+#vs2-cart-confirmation div {
+font-size:13px;
+}
+#vs2-cart-confirmation a {
+font-size: 1em;
+display: block;
+padding: .5em 1em;
+margin: 0 auto 10px;
+border-radius: 2px;
+text-decoration: none;
+cursor: pointer;
+text-transform: uppercase;
+text-decoration: none;
+text-align:center;
+}
+#vs2-cart-confirmation-custom p {
+margin-bottom: 1em;
+clear:both;
+}
+#vs2-cart-confirmation-custom .button-close {
+float:right;
+margin:-20px -24px 0 0;
+padding:20px 20px 10px 20px;
+/*position: absolute;
+top:10px;
+right:10px;
+font-size:1.5em;*/
+}
+#vs2-cart-confirmation-custom .button-review {
+font-size: 1em;
+display: block;
+padding: .5em 1em;
+margin: 0 auto 20px;
+border-radius: 2px;
+text-decoration: none;
+cursor: pointer;
+text-transform: uppercase;
+text-decoration: none;
+text-align:center;
+}
+#vs2-cart-confirmation-custom .button-close {
+cursor:pointer;
+}
+#vs2-cart-confirmation-custom h3 {
+float:left;
+margin-bottom: .5em;
+}
+#vs2-cart-emptyCart-message {
+text-align: center;
+}
+
+
+
+/* =account */
+
+#vs2-account-nav {
+margin-bottom: 1em;
+}
+#vs2-account-nav > div {
+display: inline-block;
+margin-right: 15px;
+}
+#vs2-account-nav a {
+text-transform: uppercase;
+text-decoration: none;
+}
+#vs2-account-main {
+margin: 0 auto;
+max-width: 520px;
+}
+#vs2-account-login-form,
+#vs2-account-forgotPassword-form {
+margin: 0 auto;
+max-width: 520px;
+}
+#vs2-account-login-form div.vs2x-row > div.vs2x-m6,
+#vs2-account-forgotPassword-form div.vs2x-row > div.vs2x-m6 {
+width:100% !important;
+}
+#vs2-account-nav .vs2-account-nav-allocations {}
+#vs2-account-nav .vs2-account-nav-clubs {
+display: none;
+}
+
+
+
+/* =registration */
+
+#vs-form-register legend {
+display: none;
+}
+#vs-form-register fieldset {
+border: none;
+padding: 0;
+margin-bottom: 0;
+}
+
+
+
+/* =cart */
+
+#vs-cart {
+padding-top: 1em;
+}
+#vs-cart form {
+margin: 0 auto;
+}
+.vs2-cart-header {
+position: relative;
+}
+.vs2-cart-section {
+padding-top: 1em;
+margin-bottom: 1em;
+}
+
+.vs2-cart-edit {
+display: inline-block;
+position: absolute;
+top: 0;
+right: 0;
+text-decoration: none;
+cursor: pointer;
+color: #111;
+}
+
+
+
+/* =products */
+
+#productlist {}
+#productdetail {}
+
+.productlist-item,
+.productdetail-item {
+overflow: hidden;
+margin-bottom: 3em;
+}
+
+.store-rows .productlist-item {
+clear: both;
+}
+.product-text {
+margin-bottom: 1.5em;
+}
+.vs2-productList-notAvailable:empty,
+.vs2-productList-soldOut:empty,
+.vs2-productList-bottleSize:empty,
+.vs2-productList-addToCart:empty,
+.vs2-productList-sub:empty {
+display: none;
+}
+.vs2-productList-soldOut span:last-child {
+text-transform: capitalize;
+color: #aa0000;
+}
+.vs2-productList-notAvailable {
+margin: 1em 0;
+}
+.vs2-productList-sub > span,
+.vs2-productList-soldOut > span,
+.vs2-allocation-sub > span {
+display: inline-block;
+padding-right: 0;
+width:32%;
+}
+.vs2-productList-item {
+margin-bottom: 2em !important;
+clear: left;
+overflow: hidden;
+}
+.vs2-productList-item > div {
+float: none;
+clear: none;
+}
+.vs2-productList-item > .vs2-productList-details {
+float: none;
+clear: none;
+}
+.vs2-productList-sub {
+padding:0 0 0.5em;/*.64286em 0 .5em*/
+}
+.vs2-allocation-sub {
+max-width: 370px;
+}
+.vs2-productList-sub > .vs2-productList-quantity {
+padding-right: 0;
+}
+.vs2-productList-quantity-input {
+width: 40px;
+text-align: center;
+}
+.vs2-productList-quantity-dropdown,
+.vs2-allocations-quantity-dropdown {
+min-width: 50px;
+width: 60px;
+}
+.vs2-productList-addToCart,
+.vs2-allocations-addToCart {
+margin-top: .5em;
+text-align: left;
+}
+
+
+/* =allocations */
+
+.vs2-allocations-details h3 {
+text-align:left;
+}
+#vs2-account-main.vs2-account-allocations {
+max-width:100%;
+}
+#vs2-account-main {
+padding-top: 1.5em;
+}
+.vs2-account-allocations header + p,
+.vs2-account-orders header + p {
+text-align: center;
+}
+.vs2-account-allocations {
+overflow: hidden;
+}
+.vs2-account-header {
+padding:1em 0;
+}
+
+.vs2-account-allocations > div {
+margin-bottom: 2em;
+}
+.vs2-allocations-image {
+text-align: right;
+}
+.vs2-allocations-image img {
+width:auto;
+height:400px;
+display: inline-block;
+}
+
+
+/*.vs2-account-allocations .vs2x-row {
+display: block;
+float:left;
+width:45%;
+
+border-top:1px solid rgba(0,0,0,.2);
+margin-top: 1em;
+margin-right: 5%;
+padding-top: 1.5em;
+margin-bottom: 3em;
+}
+.vs2-allocations-sub {
+margin-bottom: 5px;
+}
+.vs2-account-allocations .vs2-allocations-image {
+display: none;
+}
+.vs2-account-allocations .vs2-allocations-details {
+width:100% !important;
+}
+*/
+
+
+
+/* =media queries */
+
+@media only screen and (max-width: 480px){/*mobile*/
+
+#vs-accountlinks {
+position: absolute;
+top: 0;
+right: 10px;
+/*width: 100%;*/
+z-index: 1001;
+text-align: right;
+/*border-bottom:1px solid #ccc;*/
+}
+#vs-accountlinks .icon-basket,
+#vs-accountlinks .icon-user {
+font-size:1.25em;
+}
+#vs2-accountLinks > span a {
+padding:10px 5px;
+}
+.theme-lightness-light #vs2-cart-confirmation-custom,
+.theme-lightness-dark #vs2-cart-confirmation-custom {
+width:100%;
+top:0;
+left:0;
+border-left:none;
+border-right:none;
+border-top:none;
+}
+#vs2-accountLinks-user-label,
+#vs2-accountLinks-cart-label {
+display: none;
+}
+.store-rows .product-image,
+.product-image {
+float: none;
+width: auto;
+margin-right: auto;
+text-align: center;
+margin-bottom: 2em;
+}
+.vs2-productList-subs,
+.vs2-productList-addToCart {
+text-align: center;
+}
+.vs2-productList-image,
+.vs2-productDetail-image {
+text-align: center;
+}
+.vs2-productList-image img,
+.vs2-productDetail-image img {
+max-width: 120px;
+height: auto;
+}
+.vs2-allocations-image.vs2x-s6.vs2x-m4,
+.vs2-allocations-details.vs2x-s6.vs2x-m8 {
+width:100% !important;
+}
+
+.vs2-allocations-image {
+text-align: center;
+
+
+
+}
+
+@media only screen and (max-width: 768px){/*mobile & tablet*/
+
+.vs2-productList-sub {
+padding: 0 0 .5em;
+}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){/*tablet*/
+
+.store-rows .product-details,
+.product-details {
+float: left;
+width: 70%;
+}
+.product-text {
+float: none;
+width: auto;
+margin-right: 0;
+}
+.product-form {
+float: none;
+width: auto;
+}
+}
+
+@media only screen and (min-width: 481px){/*tablet & desktop*/
+
+#vs-accountlinks {
+position: absolute;
+z-index: 100;
+top: 0;
+right: 20px;
+}
+#vs2-accountLinks-user i,
+#vs2-accountLinks-cart i {
+display:none;
+}
+
+
+.store-rows .product-image,
+.product-image {
+text-align: right;
+}
+.store-rows .product-image,
+.product-image {
+float: left;
+width: 25%;
+margin-right: 5%;
+}
+.vs2-productList-item > .vs2-productList-image {
+float: right;
+margin-left: 20px;
+text-align: center;
+}
+.vs2-productDetail-image {
+float: right;
+margin-left: 20px;
+text-align: center;
+}
+.vs2-productList-image img {
+max-width: 100px;
+height: auto;
+}
+.vs2-productDetail-image img {
+max-width: 150px;
+height: auto;
+}
+.product-form h2,
+.product-form h3,
+.store-rows h2,
+.store-rows h3 {
+text-align: left;
+}
+}
+
+@media only screen and (min-width: 769px){/*desktop*/
+
+.store-rows .product-details,
+.product-details {
+float: left;
+width: 70%;
+}
+.product-text {
+float: left;
+width: 57%;
+margin-right: 7%;
+}
+.product-form {
+float: left;
+width: 35%;
+}
+}
+
+
+
+/* =changelog */
+
+/*
+account nav clubs and allocations
+vs2-loading	added
+vs2-cart-emptyCart-message added
+allocations
+.vs2-productList-sub padding
+vs2-productList-quantity-dropdown min-width
+add form span 32%
+hide if empty
+account-link icons added
+custom cart confirmation added
+.vs2-productList-quantity padding-right 0
+@media consolidated media queries
+.vs2-productList-sub padding top
+#vs-accountlinks font size 13px
+#vs2-cart-confirmation a styled like .button, font-size 13px
+

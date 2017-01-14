@@ -1,0 +1,279 @@
+[24-Apr-2014 23:44:37 UTC] PHP Fatal error:  Call to undefined function the_field() in /home/faitmain/public_html/wp-content/themes/faitmain/page-templates/two-column-asymmetrical-template.php on line 15
+[13-May-2014 17:42:55 UTC] WordPress database error Lost connection to MySQL server during query for query SELECT   wp_posts.* FROM wp_posts  WHERE 1=1  AND wp_posts.ID = 7 AND wp_posts.post_type = 'page'  ORDER BY wp_posts.post_date DESC  made by require('wp-blog-header.php'), wp, WP->main, WP->query_posts, WP_Query->query, WP_Query->get_posts
+[25-May-2014 11:22:03 UTC] PHP Fatal error:  Call to undefined function the_field() in /home/faitmain/public_html/wp-content/themes/faitmain/page-templates/two-column-asymmetrical-template.php on line 15
+[28-May-2014 10:07:56 UTC] PHP Fatal error:  Call to undefined function the_field() in /home/faitmain/public_html/wp-content/themes/faitmain/page-templates/two-column-asymmetrical-template.php on line 15
+[01-Jun-2014 10:28:12 UTC] PHP Fatal error:  Call to undefined function the_field() in /home/faitmain/public_html/wp-content/themes/faitmain/page-templates/two-column-asymmetrical-template.php on line 15
+[19-Jun-2014 03:17:01 UTC] PHP Fatal error:  Call to undefined function the_field() in /home/faitmain/public_html/wp-content/themes/faitmain/page-templates/two-column-asymmetrical-template.php on line 15
+[20-Jul-2014 22:29:23 UTC] PHP Fatal error:  Call to undefined function the_field() in /home/faitmain/public_html/wp-content/themes/faitmain/page-templates/two-column-asymmetrical-template.php on line 15
+[22-Jul-2014 00:54:21 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-blog-header.php on line 16
+[22-Jul-2014 00:54:28 UTC] PHP Warning:  include(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/template-loader.php on line 74
+[22-Jul-2014 00:54:28 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/template.php on line 501
+[22-Jul-2014 00:54:28 UTC] PHP Warning:  include(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/script-loader.php on line 566
+[22-Jul-2014 00:54:28 UTC] PHP Warning:  include(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/script-loader.php on line 51
+[22-Jul-2014 00:54:28 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/template.php on line 503
+[22-Jul-2014 00:54:28 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/template.php on line 501
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/index.php on line 17
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-blog-header.php on line 12
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-load.php on line 29
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-config.php on line 102
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 21
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 22
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 30
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 71
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 72
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/functions.php on line 8
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 73
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 74
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 75
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 76
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/pomo/mo.php on line 10
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/pomo/translations.php on line 10
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/pomo/mo.php on line 11
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/load.php on line 320
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/load.php on line 412
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 89
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 106
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 112
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 113
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 114
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 115
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 116
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 117
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 118
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 119
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 120
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 121
+[22-Jul-2014 00:55:01 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 219
+[22-Jul-2014 00:55:04 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/functions.php on line 2905
+[22-Jul-2014 00:55:04 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-content/themes/faitmain/functions.php on line 118
+[22-Jul-2014 00:55:04 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-content/themes/faitmain/functions.php on line 124
+[22-Jul-2014 00:55:04 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-content/themes/faitmain/functions.php on line 130
+[22-Jul-2014 00:55:04 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-blog-header.php on line 16
+[22-Jul-2014 00:55:04 UTC] PHP Warning:  include(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/template-loader.php on line 74
+[22-Jul-2014 00:55:04 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/template.php on line 501
+[22-Jul-2014 00:55:04 UTC] PHP Warning:  include(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/script-loader.php on line 566
+[22-Jul-2014 00:55:04 UTC] PHP Warning:  include(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/script-loader.php on line 51
+[22-Jul-2014 00:55:04 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/template.php on line 503
+[22-Jul-2014 00:55:04 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/template.php on line 501
+[22-Jul-2014 02:51:40 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-blog-header.php on line 16
+[22-Jul-2014 02:51:47 UTC] PHP Warning:  include(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/template-loader.php on line 74
+[22-Jul-2014 02:51:47 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/template.php on line 501
+[22-Jul-2014 02:51:47 UTC] PHP Warning:  include(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/script-loader.php on line 566
+[22-Jul-2014 02:51:47 UTC] PHP Warning:  include(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/script-loader.php on line 51
+[22-Jul-2014 02:51:47 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/template.php on line 503
+[22-Jul-2014 02:51:47 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/template.php on line 501
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/index.php on line 17
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-blog-header.php on line 12
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-load.php on line 29
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-config.php on line 102
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 21
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 22
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 30
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 71
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 72
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/functions.php on line 8
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 73
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 74
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 75
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 76
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/pomo/mo.php on line 10
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/pomo/translations.php on line 10
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/pomo/mo.php on line 11
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/load.php on line 320
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/load.php on line 412
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 89
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 106
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 112
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 113
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 114
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 115
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 116
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 117
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 118
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 119
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 120
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 121
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-settings.php on line 219
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-includes/functions.php on line 2905
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-content/themes/faitmain/functions.php on line 118
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-content/themes/faitmain/functions.php on line 124
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-content/themes/faitmain/functions.php on line 130
+[22-Jul-2014 02:51:49 UTC] PHP Warning:  require_once(): Unable to allocate memory for pool. in /home/faitmain/public_html/wp-blog-header.php on line 16
+[01-Oct-2014 15:10:32 UTC] WordPress database error Lost connection to MySQL server during query for query SELECT option_value FROM wp_options WHERE option_name = 'limit_login_client_type' LIMIT 1 made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), call_user_func_array, limit_login_setup, limit_login_setup_options, limit_login_get_option, get_option
+[20-Oct-2014 02:35:44 UTC] PHP Warning:  trim() expects parameter 1 to be string, array given in /home/faitmain/public_html/wp-includes/query.php on line 1480
+[17-Mar-2015 16:10:09 UTC] WordPress database error Lost connection to MySQL server during query for query SELECT option_value FROM wp_options WHERE option_name = 'limit_login_allowed_retries' LIMIT 1 made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), call_user_func_array, limit_login_setup, limit_login_setup_options, limit_login_get_option, get_option
+[17-Mar-2015 16:11:45 UTC] WordPress database error Lost connection to MySQL server during query for query SELECT user_id, meta_key, meta_value FROM wp_usermeta WHERE user_id IN (1) ORDER BY umeta_id ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/faitmain/page.php'), the_post, WP_Query->the_post, setup_postdata, get_userdata, get_user_by, WP_User->init, WP_User->for_blog, WP_User->_init_caps, get_user_meta, get_metadata, update_meta_cache
+[17-Mar-2015 16:19:12 UTC] WordPress database error Lost connection to MySQL server during query for query SELECT option_value FROM wp_options WHERE option_name = 'limit_login_cookies' LIMIT 1 made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), call_user_func_array, limit_login_setup, limit_login_setup_options, limit_login_get_option, get_option
+[17-Mar-2015 16:39:54 UTC] WordPress database error Lost connection to MySQL server during query for query SELECT option_value FROM wp_options WHERE option_name = 'limit_login_allowed_retries' LIMIT 1 made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), call_user_func_array, limit_login_setup, limit_login_setup_options, limit_login_get_option, get_option
+[17-Mar-2015 16:55:55 UTC] WordPress database error Lost connection to MySQL server during query for query 
+		SELECT ID, post_name, post_parent, post_type
+		FROM wp_posts
+		WHERE post_name IN ('account')
+		AND post_type IN ('page','attachment')
+	 made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, get_page_by_path
+[17-Jul-2015 15:49:50 UTC] PHP Fatal error:  Call to undefined function the_field() in /home/faitmain/public_html/wp-content/themes/faitmain/page-templates/two-column-asymmetrical-template.php on line 15
+[05-Apr-2016 18:38:19 UTC] PHP Fatal error:  Call to undefined function the_field() in /home/faitmain/public_html/wp-content/themes/faitmain/page-templates/two-column-asymmetrical-template.php on line 15
+[01-May-2016 04:51:28 UTC] PHP Fatal error:  Call to undefined function the_field() in /home/faitmain/public_html/wp-content/themes/faitmain/page-templates/two-column-asymmetrical-template.php on line 15
+[04-Aug-2016 11:01:26 UTC] PHP Fatal error:  Call to undefined function get_transient() in /home/faitmain/public_html/deleteme.wpujus.php on line 16
+[04-Aug-2016 11:01:26 UTC] PHP Fatal error:  Call to undefined function get_transient() in /home/faitmain/public_html/deleteme.wpra1i.php on line 16
+[04-Aug-2016 11:01:26 UTC] PHP Fatal error:  Call to undefined function get_transient() in /home/faitmain/public_html/deleteme.wpfr5k.php on line 16
+[04-Aug-2016 11:01:31 UTC] PHP Fatal error:  Call to undefined function get_transient() in /home/faitmain/public_html/deleteme.wpvstz.php on line 16
+[04-Aug-2016 22:53:03 UTC] PHP Fatal error:  Call to undefined function get_transient() in /home/faitmain/public_html/deleteme.wptgfq.php on line 16
+[04-Aug-2016 22:53:03 UTC] PHP Fatal error:  Call to undefined function get_transient() in /home/faitmain/public_html/deleteme.wpnwb0.php on line 16
+[04-Aug-2016 22:53:03 UTC] PHP Fatal error:  Call to undefined function get_transient() in /home/faitmain/public_html/deleteme.wpfjpw.php on line 16
+[04-Aug-2016 22:53:03 UTC] PHP Fatal error:  Call to undefined function get_transient() in /home/faitmain/public_html/deleteme.wpdk6d.php on line 16
+[12-Aug-2016 04:34:57 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:15:58 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:15:58 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:15:58 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:15:59 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:15:59 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:16:00 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:16:00 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:16:00 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:16:01 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:16:06 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:16:12 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:16:17 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:16:18 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:16:23 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:16:23 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:16:24 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:16:34 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:16:40 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:16:40 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:16:51 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:16:56 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:01 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:02 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:02 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:03 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:08 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:08 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:14 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:14 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:15 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:15 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:15 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:21 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:21 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:27 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:27 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:32 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:38 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:38 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:39 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:39 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:40 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:40 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:40 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:41 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:41 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:42 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:47 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:47 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:48 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:48 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:49 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:49 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:49 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Aug-2016 20:17:50 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[14-Aug-2016 01:19:15 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[14-Aug-2016 12:29:28 UTC] PHP Fatal error:  Call to undefined function get_option() in /home/faitmain/public_html/xmlrpc.php on line 32
+[14-Aug-2016 12:29:37 UTC] PHP Fatal error:  Call to undefined function get_option() in /home/faitmain/public_html/xmlrpc.php on line 32
+[18-Aug-2016 13:28:30 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[19-Aug-2016 20:43:38 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[19-Aug-2016 20:43:42 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[21-Aug-2016 00:02:59 UTC] PHP Fatal error:  Call to undefined function get_option() in /home/faitmain/public_html/xmlrpc.php on line 32
+[22-Aug-2016 10:57:01 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[22-Aug-2016 12:43:29 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[23-Aug-2016 17:18:50 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[24-Aug-2016 20:02:37 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[24-Aug-2016 20:02:38 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[24-Aug-2016 20:02:39 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[26-Aug-2016 03:26:34 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[26-Aug-2016 20:34:20 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[26-Aug-2016 20:34:43 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[26-Aug-2016 20:53:34 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[27-Aug-2016 12:53:38 UTC] PHP Fatal error:  Call to undefined function get_option() in /home/faitmain/public_html/xmlrpc.php on line 32
+[05-Sep-2016 03:35:29 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[11-Sep-2016 15:37:49 UTC] PHP Fatal error:  Call to undefined function get_option() in /home/faitmain/public_html/xmlrpc.php on line 32
+[12-Sep-2016 11:25:22 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:25:22 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:25:22 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:25:22 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:25:22 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:25:22 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:25:22 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:25:22 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:25:22 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:25:22 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:25:23 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:25:23 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:25:23 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:25:23 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:25:23 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:25:23 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:25:23 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:25:23 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:25:23 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:25:23 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:26:05 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:26:05 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:26:05 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:26:05 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:26:05 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:26:05 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:26:06 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:26:06 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:26:06 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:26:06 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:26:06 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:26:07 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:26:07 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:26:07 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:26:07 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:26:07 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:26:07 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:26:07 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 11:26:07 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[12-Sep-2016 19:03:37 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Sep-2016 07:26:29 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[14-Sep-2016 00:58:56 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[14-Sep-2016 04:52:39 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[15-Sep-2016 09:35:10 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[17-Sep-2016 04:46:38 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[17-Sep-2016 12:16:49 UTC] PHP Fatal error:  Call to undefined function get_option() in /home/faitmain/public_html/xmlrpc.php on line 32
+[23-Sep-2016 18:56:35 UTC] PHP Fatal error:  Call to undefined function get_option() in /home/faitmain/public_html/xmlrpc.php on line 32
+[27-Sep-2016 16:27:43 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[01-Oct-2016 01:35:34 UTC] PHP Fatal error:  Call to undefined function get_option() in /home/faitmain/public_html/xmlrpc.php on line 32
+[03-Oct-2016 02:35:22 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[05-Oct-2016 06:08:16 UTC] PHP Fatal error:  Call to undefined function get_option() in /home/faitmain/public_html/xmlrpc.php on line 32
+[07-Oct-2016 09:50:26 UTC] PHP Fatal error:  Call to undefined function get_option() in /home/faitmain/public_html/xmlrpc.php on line 32
+[10-Oct-2016 04:42:45 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[11-Oct-2016 22:42:50 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[13-Oct-2016 20:45:19 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[14-Oct-2016 04:09:15 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[16-Oct-2016 02:46:11 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[16-Oct-2016 08:00:11 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[18-Oct-2016 06:52:46 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[20-Oct-2016 14:24:30 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[23-Oct-2016 10:40:54 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[25-Oct-2016 11:12:43 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[25-Oct-2016 13:07:57 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[29-Oct-2016 16:33:39 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[30-Oct-2016 15:38:49 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[01-Nov-2016 00:41:27 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[07-Nov-2016 18:08:41 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[09-Nov-2016 03:16:48 UTC] PHP Fatal error:  Call to undefined function get_option() in /home/faitmain/public_html/xmlrpc.php on line 32
+[11-Nov-2016 16:07:27 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[15-Nov-2016 03:53:45 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[17-Nov-2016 18:55:43 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[23-Nov-2016 07:03:51 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[23-Nov-2016 08:46:19 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[25-Nov-2016 10:08:48 UTC] PHP Fatal error:  Call to undefined function get_option() in /home/faitmain/public_html/xmlrpc.php on line 32
+[15-Dec-2016 18:37:14 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[20-Dec-2016 13:39:20 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[22-Dec-2016 17:16:30 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[24-Dec-2016 14:08:10 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80
+[11-Jan-2017 01:53:25 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/faitmain/public_html/xmlrpc.php on line 80

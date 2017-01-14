@@ -1,0 +1,41 @@
+//type//
+
+@font-face {
+	font-family: 'pea_olsonregular';
+	src: url('fonts/peaolson-webfont.eot');
+	src: url('fonts/peaolson-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/peaolson-webfont.woff') format('woff'),
+		url('fonts/peaolson-webfont.ttf') format('truetype'),
+		url('fonts/peaolson-webfont.svg#pea_olsonregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+.pea{font-family: 'pea_olsonregular';}
+.garamond {font-family: "adobe-garamond-pro",sans-serif;}
+.garamond_itl {font-family: "adobe-garamond-pro",sans-serif; font-style: italic;}
+.prox{font-family: "proxima-nova",sans-serif;}
+.prox_light{font-family: "proxima-nova",sans-serif; font-weight: 100;}
+.prox_bold{font-family: "proxima-nova",sans-serif; font-weight: 600;}
+
+
+h1{.garamond; font-size: 48px;}
+h2{.garamond; font-size: 29px; font-weight: 400;}
+h3{.garamond; font-size: 22px; font-weight: 400;}
+p {.garamond; font-size: 18px; line-height: 25px; letter-spacing: 1px; color: @grey;}
+a{ color: @blue; .transition(0.3s); letter-spacing: 1px; font-weight: 600;
+	&:hover {
+		color: @grey_hover;
+	}
+}
+
+//colors//
+@white:         #ffffff;
+@bg:            #F3F4F4;
+@grey_light:    #F1F2F2;
+@grey_link:     #BCBEC0;
+@grey_hover:    #9D9FA2;
+@grey:          #515759;
+@grey_dark:     #231F20;
+@blue_light:    #2E50C1;
+@blue:          #26257C;

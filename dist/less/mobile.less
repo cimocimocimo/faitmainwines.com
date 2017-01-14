@@ -1,0 +1,585 @@
+// big screen
+
+@media screen and (min-width: 1400px) {
+    body{
+        .wrap {
+            header{
+            }
+            .hero{
+                .covervid-wrapper{
+                    .covervid-video{
+
+                    }
+                }
+            }
+            footer{
+            }
+        }
+    }
+}
+
+@media only screen and (min-width : 1670px){
+    body{
+        .wrap {
+            header{
+            }
+            .hero{
+                .covervid-wrapper{
+//                    .scale(@ratio:1.05);
+                    .covervid-video{
+//                        transform:  scale(1)!important;
+                    }
+                }
+            }
+            footer{
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    body{
+        .wrap {
+            header{
+            }
+            .hero{
+                .covervid-wrapper{
+//                    .scale(@ratio:1.15);
+                    .covervid-video{
+//                        transform:  scale(1.15)!important;
+                    }
+                }
+            }
+            footer{
+            }
+        }
+    }
+}
+@media screen and (min-width: 2000px) {
+    body{
+        .wrap {
+            header{
+            }
+            .hero{
+                .covervid-wrapper{
+//                    .scale(@ratio:1.2);
+                    .covervid-video{
+//                        transform: scale(1.55)!important;
+                    }
+                }
+            }
+            footer{
+            }
+        }
+    }
+}
+
+// notebooks
+@media only screen and (min-width : 1200px) and (max-width : 1440px)  {
+    body{
+        .wrap {
+            header{
+            }
+            footer{
+            }
+        }
+    }
+}
+// small notebooks
+@media only screen and (min-width : 1024px) and (max-width : 1200px)  {
+    body{
+        .wrap {
+            header{
+            }
+            footer{
+            }
+        }
+    }
+}
+
+
+//Tablet
+@media only screen and (min-width : 767px) and (max-width : 1024px) {
+    body{
+        .wrap {
+            header{
+            }
+            .overlay{
+                ul{
+                    li{
+                        line-height: 33px;
+                    }
+                }
+                .logo{
+                    top: 0;
+                }
+                nav{
+                    position: absolute;
+                    margin-top: 0;
+                }
+            }
+            .hero{
+                .img_block{
+//                    background-image: url("img/landscape-nature-clouds-cloudy-tab.jpg");
+//                    background-size: cover;
+//                    margin-bottom: -40px;
+                }
+            }
+            .hero_lg{
+                .l_form {
+                    margin: 50px auto;
+                    position: relative;
+                    top: 0;
+                    -webkit-transform: translateY(0);
+                    transform: translateY(0);
+                }
+                .emblem{
+                    margin: 101px auto 0;
+                    position: static;
+                    top: 0;
+                }
+            }
+            .hero_ml{
+                .l_form {
+                }
+            }
+            .hero_sr{
+                .img_block{
+                    background: url("img/Bee-tab.jpg") no-repeat;
+                    background-size: cover;
+                }
+            }
+            .hero_hm{
+                .img_block{
+                    background: url("img/home_head_tab.jpg") no-repeat;
+                    background-size: cover;
+                }
+            }
+            .hero_lp{
+                .img_block{
+                    background: url("img/rocks.jpg") no-repeat;
+                    background-size: cover;
+                }
+            }
+            .hero_sl{
+                .img_block{
+                    background: url("img/SleepingLady-mob.jpg") no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+            .hero_tf{
+                .img_block{
+                    background: url("img/horse-tab-pt.jpg") no-repeat;
+                    background-size: cover;
+                }
+            }
+            .hero_ml{
+                .l_form {
+                }
+            }
+            .container{
+                .page_img{
+                    padding: 0;
+                    width: 90%;
+                }
+                .slide{
+                    width: 90%;
+                    .slide_inner{
+                        height: 25em;
+                    }
+                    .slide_inner.open {
+                        transform: scale(1.05);
+                    }
+                }
+                .grid{
+                    .shauna{
+                        margin-top: 186px;
+                    }
+                }
+            }
+        }
+        .mob{
+            display: block;
+        }
+        .desk{
+            display: none;
+        }
+        h1{
+            font-size: 44px;
+        }
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) and (orientation: landscape) {
+    body{
+        .wrap {
+            .container{
+                .slide{
+                    .slide_inner{
+                        height: 32em;
+                    }
+                }
+            }
+            .hero_tf{
+                .img_block{
+                    background: url("img/horse-tab.jpg") no-repeat;
+                    background-size: cover;
+                }
+            }
+            header{
+            }
+            footer{
+            }
+        }
+    }
+}
+
+//Mobile
+@media only screen and (min-width: 320px) and (max-width: 766px) {
+    body{
+        .wrap {
+            header{
+            }
+            .hero{
+                .hero_logo{
+                    width: 240px;
+                }
+                .img_block{
+//                    background-image: url("img/landscape-nature-clouds-cloudy-tab.jpg");
+//                    background-size: cover;
+//                    margin-bottom: -40px;
+                }
+                .hero_text{
+                    padding: 0 15px;
+                }
+            }
+            .join{
+                right: 30px;
+                top: 30px;
+            }
+            .nav_wrap{
+                .button_container{
+                    margin-left: 30px;
+                }
+            }
+            #close , #foot_close{
+                .close_button_container{
+                    margin-left: 30px
+                }
+            }
+            .overlay{
+                .logo{
+                    top: -15px;
+                }
+
+                nav{
+                    margin-top: -45px;
+                }
+                ul{
+                    li{
+                        animation: none;
+                        .opacity(100%);
+                        font-size: 16px;
+                        line-height: 22px;
+                        h1{
+                            font-size: 18px;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+            .hero_lg{
+                h1{
+                    font-size: 31px;
+                    margin-bottom: -20px;
+                    margin-top: 70px;
+                }
+                .l_form {
+                    margin: -25px auto 35px;
+                    top: 0 !important;
+                    -webkit-transform: translateY(0%) !important;
+                    transform: translateY(0%)!important;
+                    form{
+                        .password {
+                            left: -43px;
+                        }
+                        .form_area{
+                            .field{
+                                width: 184px;
+                            }
+                            #email{
+                                width: 220px;
+                            }
+                            #tel {
+                                width: 215px;
+                            }
+                        }
+                    }
+                }
+                .emblem{
+                    margin: 40px auto 0;
+                    position: static;
+                    top: 0;
+                }
+            }
+            .hero{
+                .img_block_sr{
+                    background: url("img/bee-2m-sm.jpg") no-repeat;
+                }
+                .img_block_lp{
+
+                }
+                .img_block_sl{
+
+                }
+                .img_block_tf{
+
+                }
+                .img_block_bt{
+                    background: url("img/Benoito-port.jpg") no-repeat;
+                }
+                .img_block_sm{
+                    background: url("img/Shauna-BW-small.jpg") no-repeat;
+                }
+                .img_block{
+                    background-size: cover;
+                }
+            }
+            .hero_hm{
+                .img_block{
+                    background: url("img/home_head_mob.jpg") no-repeat;
+                    background-size: cover;
+                }
+            }
+            .hero_sr{
+                .img_block{
+                    background: url("img/Bee-mob.jpg") no-repeat;
+                    background-size: cover;
+                }
+            }
+            .hero_lp{
+                .img_block{
+                    background: url("img/rocks.jpg") no-repeat;
+                    background-size: cover;
+                }
+            }
+            .hero_sl{
+                .img_block{
+                    background: url("img/SleepingLady-mob.jpg") no-repeat;
+                    background-size: cover;
+                    background-position: center bottom;
+                }
+            }
+            .hero_tf{
+                .img_block{
+                    background: url("img/horse-mob.jpg") no-repeat;
+                    background-size: cover;
+                }
+            }
+            .hero_ml{
+                .l_form {
+                }
+            }
+            .container{
+                padding: 0 15px;
+                .welcome_text{
+                    margin: 145px auto;
+                    p{
+                        font-size: 16px;
+                    }
+                }
+                .text{
+                    p{
+                        margin: 50px auto 40px;
+                    }
+                    .side_icon{
+                        &:after{
+                            display: none;
+                        }
+                    }
+                }
+                .grid{
+                    .grid-item{
+                        .column(12);
+                        margin-bottom: 15px;
+                        padding: 0;
+                        &:nth-child(odd){
+                            padding-left: 0;
+                        }
+                        &:nth-child(even){
+                            padding-right: 0;
+                        }
+                        a{
+                            h2{
+                                bottom: 70px;
+                            }
+                        }
+                    }
+                    .sleeping {
+                        left: 0 !important;
+                    }
+                    .benoit{
+                        padding: 0;
+                        left: 0 !important;
+                    }
+                    .shauna{
+                        margin-top: 0;
+                        padding: 0;
+                    }
+                }
+                .spring {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+                .people {
+                    width: 100%;
+                    margin: auto;
+                }
+                .page_img{
+                    width: 100%;
+                    padding: 7px 0;
+                }
+                .slide{
+                    width: 100%;
+                    padding: 7px 0;
+                    .slide_inner{
+                        height: 9em;
+                    }
+                    .slide_inner.open {
+                        transform: scale(1.05);
+                    }
+                }
+                .info{
+                    p {
+                        padding: 10px 10px 0px 0px;
+                        span{
+                            top: 0;
+                        }
+                    }
+                    .half_big{
+                        font-size: 17px;
+                        padding-right: 10px;
+                        span{
+                            font-size: 16px;
+                            padding: 0 9px;
+                        }
+                    }
+                }
+            }
+            .sr{
+                .page_img {
+                    margin: 60px auto -30px;
+                }
+            }
+            .credits{
+                ul{
+                    li{
+                        h1{
+                            font-size: 20px;
+                        }
+                        h2{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            footer{
+                .foot_nav{
+                    li{
+                        display: block;
+                    }
+                }
+            }
+        }
+        p{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 38px;
+        }
+        h3{
+            line-height: 27px;
+        }
+        .mob{
+            display: block;
+        }
+        .tab{
+            display: block;
+        }
+        .desk{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 766px) and (orientation: landscape){
+    body{
+        .wrap {
+            header{
+            }
+            .overlay{
+                nav {
+                    margin-top: -45px;
+                }
+                .logo {
+                    display: none;
+                }
+                ul{
+                    li {
+                        font-size: 13px;
+                        line-height: 16px;
+                        animation: none;
+                        .opacity(100%);
+                        h1 {
+                            font-size: 15px;
+                            margin-top: -3px;
+                            hr{
+                                margin: 4px auto;
+                            }
+                        }
+                    }
+                }
+            }
+            .hero_lg{
+                .l_form {
+                    margin: 70px auto 25px;
+                }
+            }
+            .hero{
+                .img_block_sr{
+                    background: url("img/bee-2m.jpg") no-repeat;
+                }
+                .img_block_lp{
+                    background: url("img/DSC02018-sm 2.jpg") no-repeat;
+                }
+                .img_block_sl{
+                    background: url("img/oranges-sm.jpg") no-repeat;
+                }
+                .img_block_tf{
+                    background: url("img/horse-bg.jpg") no-repeat;
+                }
+                .img_block_bt{
+                    background: url("img/Benoit-Color-bg.jpg") no-repeat;
+                }
+            }
+            .container{
+                .slide{
+                    .slide_inner{
+                        height: 18em;
+                    }
+                }
+            }
+            footer{
+            }
+        }
+    }
+}
+.vs2x-s6 {
+    width: 100%!important;
+}
+@media screen and (min-width: 48em){
+	.vs2x-m4 , .vs2x-m8 , .vs2x-s6  {
+	    width: 100%!important;
+	}
+}

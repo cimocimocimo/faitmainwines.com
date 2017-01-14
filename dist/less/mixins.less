@@ -1,0 +1,217 @@
+// ==========================================================================
+// Base – Mixins
+// ==========================================================================
+// Font sizes (primary sizing in `rem` units with a fallback of `px`)
+// Example usage .font-size(18);
+.font-size (@size) {
+	@remValue: @size / 16;
+	@pxValue: (@size);
+	font-size: ~"@{pxValue}px";
+	font-size: ~"@{remValue}rem";
+}
+
+// Line height sizes (primary sizing in `rem` units with a fallback of `px`)
+// Example usage .line-height(22);
+.line-height (@size) {
+	@remValue: @size / 16;
+	@pxValue: (@size);
+	line-height: ~"@{pxValue}px";
+	line-height: ~"@{remValue}rem";
+}
+
+// Border Radius
+// Example usage .border-radius(2px) || .border-radius(100%);
+.border-radius(@radius) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+// Rotate (Transformation)
+// Example usage .rotate(180) || .rotate(-45);
+.rotate(@rotate) {
+	-ms-transform: rotate(~"@{rotate}deg");
+	-webkit-transform: rotate(~"@{rotate}deg");
+	transform: rotate(~"@{rotate}deg");
+}
+
+// SVG background with PNG fallback
+// Example Usage .svg-bg("img/banner.svg", "img/banner.png", 50%, 50%, no-repeat);
+.bg-svg(@svg, @png, @x: 0, @y: 0, @repeat: no-repeat) {
+	background: url(@svg) @x @y @repeat;
+	.no-svg & {
+		background: url(@png) @x @y @repeat;
+	}
+}
+
+// Background Color with Opacity
+// Example Usage: .bg-rgba(#111, 50%);
+.bg-rgba(@color,@alpha){
+	@rgba: rgba(red(@color),green(@color),blue(@color),@alpha);
+	@argb: argb(@rgba);
+	background-color: @color;
+	background-color: @rgba;
+	filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{argb}, endColorstr=@{argb})";
+	-ms-filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{argb}, endColorstr=@{argb})";
+}
+
+// Opacity
+// Example Usage: .opacity(50%);
+.opacity (@percentOpacity: 50%) {
+	@opacity: unit(@percentOpacity) / 100;
+	-webkit-opacity: @opacity;
+	-moz-opacity: @opacity;
+	opacity: @opacity;
+}
+
+// Animations
+// Example Usage .animation(1s);
+.animate(@duration: 1s;) {
+	-webkit-animation-duration: @duration;
+	animation-duration: @duration;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+// Animation Delay
+// Example Usage .animation-delay(1s)
+.animate-delay(@delay: 1s) {
+	-webkit-animation-delay: @delay;
+	animation-delay: @delay;
+}
+
+// CSS Transitions
+// Example Usage .transition(0.3s)
+.transition(@speed: 0.3s) {
+	-webkit-transition: all @speed;
+	-moz-transition: all @speed;
+	transition: all @speed;
+}
+.transition_c (@transition) {
+	-webkit-transition: @transition;
+	-moz-transition:    @transition;
+	-ms-transition:     @transition;
+	-o-transition:      @transition;
+}
+// Transition Delay
+// Example usage .transition-delay(.3s)
+.transition-delay(@speed: 0.3s) {
+	-webkit-transition-delay: @speed;
+	-moz-transition-delay: @speed;
+	transition-delay: @speed;
+}
+.transform(...) {
+	-webkit-transform: @arguments;
+	-moz-transform: @arguments;
+	-o-transform: @arguments;
+	-ms-transform: @arguments;
+	transform: @arguments;
+}
+
+.scale(@ratio:1.5){
+	.transform(scale(@ratio));
+}
+
+
+// CSS Transitions
+// Example Usage .transition(0.3s)
+.transition(@speed: 0.3s) {
+	-webkit-transition: all @speed;
+	-moz-transition: all @speed;
+	transition: all @speed;
+}
+
+//vertical-align
+.v_align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+
+//vertical & horisontal align
+.Horizontal_vertical-align {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+
+@keyframes fadeInUpBig {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(150px);
+		-ms-transform: translateY(150px);
+		transform: translateY(150px);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+.fadeInUpBig {
+	-webkit-animation-name: fadeInUpBig;
+	animation-name: fadeInUpBig;
+}
+.spinner {
+	width: 40px;
+	height: 40px;
+	margin: 100px auto;
+	background-color: @grey;
+
+	border-radius: 100%;
+	-webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+	animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+	0% { -webkit-transform: scale(0) }
+	100% {
+		-webkit-transform: scale(1.0);
+		opacity: 0;
+	}
+}
+
+@keyframes sk-scaleout {
+	0% {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	} 100% {
+		-webkit-transform: scale(1.0);
+		transform: scale(1.0);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes flash {
+	from, 50%, to {
+		opacity: 1;
+	}
+
+	25%, 75% {
+		opacity: 0;
+	}
+}
+
+@keyframes flash {
+	from, 50%, to {
+		opacity: 1;
+	}
+
+	25%, 75% {
+		opacity: 0;
+	}
+}
+
+.flash {
+	-webkit-animation: flash 5.0s infinite ease-in-out;
+	animation: flash 5.0s infinite ease-in-out;
+}
