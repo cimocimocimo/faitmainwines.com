@@ -130,6 +130,10 @@ body{
                 background: url("img/Shauna-BW.jpg") no-repeat;
                 background-size: cover;
             }
+            .img_block_lk {
+              background: url("img/Lionel.jpeg") no-repeat;
+              background-size: cover;
+            }
             .img_block{
                 margin-bottom: -40px;
             }
@@ -910,6 +914,7 @@ body{
             }
             .spring ,.people{
                 margin: 0 auto 120px;
+                position: relative;
                 a{
                     width: 100%;
                     height: 100%;
@@ -921,6 +926,10 @@ body{
                         backface-visibility: hidden;
                         -webkit-backface-visibility: hidden;
                     }
+                    .ops{
+                        position: absolute;
+                        .opacity(0);
+                    } 
                     h2{
                         color: @grey_link;
                         text-align: center;
@@ -942,6 +951,25 @@ body{
                         }
                     }
                     img{
+                        .opacity(100%);
+                    }
+                }
+            }
+            .soon{
+                position: relative; 
+                margin-top: 60px;  
+                margin-bottom: 60px;    
+                a{
+                img{
+                    .transition(0.1s);
+                }
+                    .ops{
+                        position: absolute;
+                        .opacity(0);
+                    }
+                }
+                &:hover{
+                    .ops{
                         .opacity(100%);
                     }
                 }
@@ -1026,6 +1054,10 @@ body{
                 .shauna{
                     margin-top: 270px;
                     padding: 0% 6% 0 10%;
+                }
+                .lionel{
+                  margin-top: 10px;
+                  padding: 0% 0 0 6%;
                 }
             }
             .people{
