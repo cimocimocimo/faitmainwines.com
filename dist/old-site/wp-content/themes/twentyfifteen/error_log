@@ -1,2 +1,0 @@
-[05-Oct-2015 09:03:25 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/faitmain/public_html/wp-content/themes/twentyfifteen/404.php on line 10
-[02-Jul-2016 18:17:22 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/faitmain/public_html/wp-content/themes/twentyfifteen/404.php on line 10
