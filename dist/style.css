@@ -1248,6 +1248,14 @@ body .wrap .hero_sl .img_block {
   background: url("video/sleeping-lady_bg.jpg") no-repeat;
   background-size: cover;
 }
+body .wrap .hero_ta .pre_vid {
+  background: url("video/St-Emilion-Header-Still.jpg") no-repeat;
+  background-size: cover;
+}
+body .wrap .hero_ta .img_block {
+  background: url("video/St-Emilion-Header-Still.jpg") no-repeat;
+  background-size: cover;
+}
 body .wrap .hero_tf .pre_vid {
   background: url("video/horse-tab.jpg") no-repeat;
   background-size: cover;
@@ -2689,6 +2697,11 @@ select {
     background-size: cover;
     background-position: center;
   }
+  body .wrap .hero_ta .img_block {
+    background: url("img/St-Emilion-Header-mob.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
   body .wrap .hero_tf .img_block {
     background: url("img/horse-tab-pt.jpg") no-repeat;
     background-size: cover;
@@ -2820,6 +2833,11 @@ select {
   }
   body .wrap .hero_sl .img_block {
     background: url("img/SleepingLady-mob.jpg") no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+  }
+  body .wrap .hero_ta .img_block {
+    background: url("img/St-Emilion-Header-mob.jpg") no-repeat;
     background-size: cover;
     background-position: center bottom;
   }
