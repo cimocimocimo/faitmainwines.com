@@ -164,7 +164,8 @@ button:focus {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
 }
 .close {
@@ -245,6 +246,7 @@ http://flickity.metafizzy.co
   cursor: pointer;
   /* vertically center */
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 .flickity-prev-next-button:hover {
@@ -389,6 +391,7 @@ a:hover {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 .Horizontal_vertical-align {
@@ -396,17 +399,20 @@ a:hover {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 @-webkit-keyframes fadeInUpBig {
   0% {
     opacity: 0;
     -webkit-transform: translateY(150px);
+    -ms-transform: translateY(150px);
     transform: translateY(150px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
     transform: translateY(0);
   }
 }
@@ -414,11 +420,13 @@ a:hover {
   0% {
     opacity: 0;
     -webkit-transform: translateY(150px);
+    -ms-transform: translateY(150px);
     transform: translateY(150px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
     transform: translateY(0);
   }
 }
@@ -663,6 +671,7 @@ a:hover {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   font-family: "adobe-garamond-pro", sans-serif;
   text-align: center;
@@ -720,6 +729,7 @@ a:hover {
   left: 50%;
   width: 0%;
   -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   height: 1px;
   background: #515759;
@@ -1090,6 +1100,7 @@ body .loader-container .loader {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   position: absolute;
   width: 100%;
@@ -1111,6 +1122,7 @@ body .loader-container .loader .expand {
   -moz-animation: fullexpand 40s linear;
   -webkit-animation: fullexpand 40s linear;
   -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   max-width: 164px;
   left: 50%;
@@ -1166,6 +1178,7 @@ body .wrap .hero .hero_logo {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 body .wrap .hero .hero_text {
@@ -1174,6 +1187,7 @@ body .wrap .hero .hero_text {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 body .wrap .hero .hero_text h1 {
@@ -1618,6 +1632,7 @@ body .wrap .account_hero .acc_form {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 body .wrap .hero_lg .l_form form,
@@ -2036,7 +2051,8 @@ body .wrap .hero_lg .acc_form,
 body .wrap .account_hero .acc_form {
   top: 0;
   -webkit-transform: translateY(0);
-  transform: translateY(0);
+  -ms-transform: translateY(0);
+      transform: translateY(0);
 }
 body .wrap .hero_lg .emblem,
 body .wrap .account_hero .emblem {
@@ -2045,7 +2061,8 @@ body .wrap .account_hero .emblem {
 body .wrap .account_hero .l_form {
   top: 0;
   -webkit-transform: translateY(0);
-  transform: translateY(0);
+  -ms-transform: translateY(0);
+      transform: translateY(0);
   margin: 100px 0;
 }
 body .wrap .account_hero .l_form .vs2x-baseline2 {
@@ -2160,8 +2177,8 @@ body .wrap .container .people:hover img {
 }
 body .wrap .container .soon {
   position: relative;
-  margin-top: 60px !important;
-  margin-bottom: 60px !important;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 body .wrap .container .soon a img {
   -webkit-transition: all 0.1s;
@@ -2341,6 +2358,7 @@ body .wrap .container .slide .slide_inner {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   -webkit-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
   position: relative;
 }
@@ -2378,6 +2396,7 @@ body .wrap .container .slide .slide_inner.open {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
   z-index: 9999;
 }
@@ -2637,6 +2656,7 @@ select {
 .cart_main {
   top: 0 !important;
   -webkit-transform: translateY(0) !important;
+  -ms-transform: translateY(0) !important;
   transform: translateY(0%) !important;
 }
 .cart_main h1 {
@@ -2673,7 +2693,8 @@ select {
     position: relative;
     top: 0;
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -ms-transform: translateY(0);
+        transform: translateY(0);
   }
   body .wrap .hero_lg .emblem {
     margin: 101px auto 0;
@@ -2718,6 +2739,7 @@ select {
   }
   body .wrap .container .slide .slide_inner.open {
     -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
             transform: scale(1.05);
   }
   body .wrap .container .grid .shauna {
@@ -2788,7 +2810,8 @@ select {
     margin: -25px auto 35px;
     top: 0 !important;
     -webkit-transform: translateY(0%) !important;
-    transform: translateY(0%) !important;
+    -ms-transform: translateY(0%) !important;
+        transform: translateY(0%) !important;
   }
   body .wrap .hero_lg .l_form form .password {
     left: -43px;
@@ -2909,6 +2932,7 @@ select {
   }
   body .wrap .container .slide .slide_inner.open {
     -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
             transform: scale(1.05);
   }
   body .wrap .container .info p {
