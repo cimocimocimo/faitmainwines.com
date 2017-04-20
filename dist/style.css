@@ -2418,9 +2418,9 @@ body .wrap .container .slide .slide_inner.open .flickity-prev-next-button:disabl
   cursor: auto;
 }
 body .wrap .container .slide .flickity-enabled.is-draggable .flickity-viewport {
-  cursor: url('img/left-arrow.png') 31 7, e-resize;
-  cursor: url('img/left-arrow.svg') 31 7, e-resize;
-  cursor: -webkit-image-set(url('img/left-arrow.png') 1x, url('img/left-arrow@2x.png') 2x) 31 7, e-resize;
+  cursor: url('img/left-arrow.png') 43 40, e-resize;
+  cursor: url('img/left-arrow.svg') 43 40, e-resize;
+  cursor: -webkit-image-set(url('img/left-arrow.png') 1x, url('img/left-arrow@2x.png') 2x) 43 40, e-resize;
 }
 body .wrap .container .slide .slide_close {
   width: 20px;
