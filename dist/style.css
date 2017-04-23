@@ -498,16 +498,23 @@ a:hover {
 .active {
   opacity: 0;
 }
-#close,
+.close-button-container {
+  position: fixed;
+  left: 52px;
+  top: 22px;
+  z-index: 1000;
+}
+.close-button img {
+  display: block;
+  height: 17px;
+  width: 17px;
+}
 #foot_close {
-  max-width: 1660px;
   margin: auto;
 }
-#close .close_button_container,
 #foot_close .close_button_container {
   position: relative;
   max-width: 17px;
-  height: 27px;
   width: 35px;
   cursor: pointer;
   z-index: 100;
@@ -515,18 +522,6 @@ a:hover {
   transition: opacity .25s ease;
   z-index: 9999;
   margin-left: 52px;
-  top: 23px;
-}
-#close .close_button_container .fa,
-#foot_close .close_button_container .fa {
-  font-size: 37px;
-  color: #231F20;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-#close .close_button_container .fa:hover,
-#foot_close .close_button_container .fa:hover {
-  color: #9D9FA2;
 }
 .nav_wrap {
   position: relative;
@@ -660,6 +655,9 @@ a:hover {
   max-width: 1600px;
   margin: auto;
   height: 100%;
+  position: relative;
+  padding: 25px 0;
+  overflow-y: scroll;
 }
 .overlay .logo {
   margin: auto;
@@ -668,15 +666,9 @@ a:hover {
   top: 0;
 }
 .overlay nav {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
   font-family: "adobe-garamond-pro", sans-serif;
   text-align: center;
   width: 100%;
-  margin-top: -85px;
 }
 .overlay ul {
   list-style: none;
@@ -2567,6 +2559,9 @@ body .wrap footer .foot_logo {
   width: 200px;
   margin: 0 auto 50px;
 }
+.no-scroll {
+  overflow: hidden;
+}
 .emblem {
   width: 15px;
   margin: 50px auto;
@@ -2686,10 +2681,6 @@ select {
   body .wrap .overlay .logo {
     top: 0;
   }
-  body .wrap .overlay nav {
-    position: absolute;
-    margin-top: 0;
-  }
   body .wrap .hero_lg .l_form {
     margin: 50px auto;
     position: relative;
@@ -2767,6 +2758,9 @@ select {
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 766px) {
+  .close-button-container {
+    left: 30px;
+  }
   body .wrap .hero .hero_logo {
     width: 240px;
   }
@@ -2778,7 +2772,7 @@ select {
     top: 30px;
   }
   body .wrap .nav_wrap .button_container {
-    margin-left: 30px;
+    margin-left: 33px;
   }
   body .wrap #close .close_button_container,
   body .wrap #foot_close .close_button_container {
@@ -2786,9 +2780,6 @@ select {
   }
   body .wrap .overlay .logo {
     top: -15px;
-  }
-  body .wrap .overlay nav {
-    margin-top: -45px;
   }
   body .wrap .overlay ul li {
     -webkit-animation: none;
@@ -2983,9 +2974,6 @@ select {
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 766px) and (orientation: landscape) {
-  body .wrap .overlay nav {
-    margin-top: -45px;
-  }
   body .wrap .overlay .logo {
     display: none;
   }

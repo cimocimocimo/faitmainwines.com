@@ -8,28 +8,33 @@
 	opacity: 0;
 }
 
-#close ,#foot_close{
-	max-width: 1660px;
+.close-button-container {
+  position: fixed;
+  left: 52px;
+  top: 22px;
+  z-index: 1000;
+}
+.close-button {
+
+  img {
+    display: block;
+    height: 17px;
+    width: 17px;
+  }
+}
+
+#foot_close{
 	margin: auto;
+
 	.close_button_container {
 		position: relative;
 		max-width: 17px;
-		height: 27px;
 		width: 35px;
 		cursor: pointer;
 		z-index: 100;
 		transition: opacity .25s ease;
 		z-index: 9999;
 		margin-left: 52px;
-		top: 23px;
-		.fa{
-			font-size: 37px;
-			color: @grey_dark;
-			.transition;
-			&:hover{
-				color: @grey_hover;
-			}
-		}
 	}
 }
 
@@ -152,6 +157,9 @@
 		max-width: 1600px;
 		margin: auto;
 		height: 100%;
+    position: relative;
+    padding: 25px 0;
+    overflow-y: scroll;
 	}
 	.logo{
 		margin: auto;
@@ -160,11 +168,9 @@
 		top: 0;
 	}
 	nav {
-		.v_align;
 		.garamond;
 		text-align: center;
 		width: 100%;
-		margin-top: -85px;
 	}
 
 	ul {

@@ -64,14 +64,21 @@
   })
 
   $doc.ready(function() {
+    // open the overlay menu
 	  $('#toggle').click(function () {
 		  $(this).toggleClass('active');
 		  $('#overlay').toggleClass('open');
+      // prevent the body from scrolling
+      $('body').addClass('no-scroll');
 	  });
 
-	  $('#close').click(function(){
+    // close overlay menu
+	  $('.js-close-overlay').click(function(event){
+      event.preventDefault();
 		  $('#toggle').toggleClass('active');
 		  $('#overlay').toggleClass('open');
+      // allow body scrolling again
+      $('body').removeClass('no-scroll');
 	  });
 
 	  $('#foot_toggle').click(function () {
