@@ -1200,8 +1200,7 @@ body .wrap .hero .img_block_sm {
   background-size: cover;
 }
 body .wrap .hero .img_block_lk {
-  background: url("img/Lionel.jpeg") no-repeat;
-  background-size: cover;
+  background: url("img/Lionel-desktop.jpg") center / cover no-repeat;
 }
 body .wrap .hero .img_block {
   margin-bottom: -40px;
@@ -2832,6 +2831,9 @@ select {
   body .wrap .hero .img_block_sm {
     background: url("img/Shauna-BW-small.jpg") no-repeat;
   }
+  body .wrap .hero .img_block_lk {
+    background: url("img/Lionel-mobile.jpg") center / cover no-repeat;
+  }
   body .wrap .hero .img_block {
     background-size: cover;
   }
@@ -3010,6 +3012,9 @@ select {
   }
   body .wrap .hero .img_block_bt {
     background: url("img/Benoit-Color-bg.jpg") no-repeat;
+  }
+  body .wrap .hero .img_block_lk {
+    background: url("img/Lionel-desktop.jpg") center / cover no-repeat;
   }
   body .wrap .container .slide .slide_inner {
     height: 18em;
