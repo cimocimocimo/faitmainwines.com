@@ -652,7 +652,6 @@ a:hover {
           animation-delay: 1s;
 }
 .overlay .inner {
-  max-width: 1600px;
   margin: auto;
   height: 100%;
   position: relative;
