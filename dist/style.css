@@ -1253,11 +1253,11 @@ body .wrap .hero_sl .img_block {
   background-size: cover;
 }
 body .wrap .hero_ta .pre_vid {
-  background: url("video/St-Emilion-Still-Header-NEW.jpg") no-repeat;
+  background: url("img/St-Emilion-Still-Header-NEW.jpg") no-repeat;
   background-size: cover;
 }
 body .wrap .hero_ta .img_block {
-  background: url("video/St-Emilion-Still-Header-NEW.jpg") no-repeat;
+  background: url("img/St-Emilion-Still-Header-NEW.jpg") no-repeat;
   background-size: cover;
 }
 body .wrap .hero_tf .pre_vid {
@@ -2306,130 +2306,6 @@ body .wrap .container .page_img {
   width: 80%;
   margin: auto;
 }
-body .wrap .container .slide {
-  padding: 40px 0;
-  width: 80%;
-  margin: auto;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  position: relative;
-}
-body .wrap .container .slide .slide_overlay {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background: rgba(51, 49, 50, 0.95);
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  -webkit-opacity: 0;
-  -moz-opacity: 0;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-body .wrap .container .slide .so_open {
-  visibility: visible;
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  cursor: url('img/Icons-x.png') 4 12, auto;
-  z-index: 9997;
-}
-body .wrap .container .slide .slide_inner {
-  overflow: hidden;
-  height: 35em;
-  display: block !important;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  position: relative;
-}
-body .wrap .container .slide .slide_inner img {
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
-  opacity: 0.5;
-}
-body .wrap .container .slide .slide_inner:hover img {
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;
-}
-body .wrap .container .slide .slide_inner .flickity-prev-next-button {
-  background: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-opacity: 0;
-  -moz-opacity: 0;
-  opacity: 0;
-}
-body .wrap .container .slide .slide_inner .flickity-prev-next-button:hover {
-  background: none;
-}
-body .wrap .container .slide .slide_inner .flickity-prev-next-button .arrow {
-  fill: #ffffff;
-}
-body .wrap .container .slide .slide_inner .flickity-prev-next-button svg {
-  width: 50%;
-  height: 50%;
-}
-body .wrap .container .slide .slide_inner.open {
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  z-index: 9999;
-}
-body .wrap .container .slide .slide_inner.open img {
-  z-index: 99999;
-  position: relative;
-  opacity: 1;
-  cursor: default;
-}
-body .wrap .container .slide .slide_inner.open .flickity-prev-next-button {
-  background: none;
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;
-}
-body .wrap .container .slide .slide_inner.open .flickity-prev-next-button:disabled {
-  filter: alpha(opacity=30);
-  opacity: .3;
-  cursor: auto;
-}
-body .wrap .container .slide .flickity-enabled.is-draggable .flickity-viewport {
-  cursor: url('img/left-arrow.png') 43 40, e-resize;
-  cursor: url('img/left-arrow.svg') 43 40, e-resize;
-  cursor: -webkit-image-set(url('img/left-arrow.png') 1x, url('img/left-arrow@2x.png') 2x) 43 40, e-resize;
-}
-body .wrap .container .slide .slide_close {
-  width: 20px;
-  position: absolute;
-  top: -25px;
-  left: 15px;
-  z-index: 99999;
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;
-  cursor: pointer;
-}
-body .wrap .container .slide .carousel-cell {
-  width: 100%;
-  /* full width */
-  height: 100%;
-  /* height of carousel */
-  margin-right: 1px;
-}
 body .wrap .container .info {
   max-width: 480px;
   margin: 75px auto;
@@ -2672,6 +2548,167 @@ select {
   border-radius: 0;
   padding: 0;
 }
+.slide {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  padding: 40px 0;
+  width: 80%;
+  margin: auto;
+  cursor: pointer;
+  position: relative;
+}
+.slide_overlay {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(51, 49, 50, 0.95);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+}
+.slide .so_open {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  visibility: visible;
+  cursor: url('img/Icons-x.png') 4 12, auto;
+  z-index: 9997;
+}
+.slide_inner {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  overflow: hidden;
+  height: 35em;
+  display: block !important;
+  position: relative;
+}
+.slide_inner img {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+.slide_inner:hover img {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.slide_inner.open {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  z-index: 9999;
+}
+.slide_inner.open img {
+  z-index: 99999;
+  position: relative;
+  opacity: 1;
+  cursor: default;
+}
+.slide_inner.open .flickity-prev-next-button {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  background: none;
+}
+.slide_inner.open .flickity-prev-next-button:disabled {
+  filter: alpha(opacity=30);
+  opacity: .3;
+  cursor: auto;
+}
+.slide .flickity-prev-next-button {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  background: none;
+}
+.slide .flickity-prev-next-button:hover {
+  background: none;
+}
+.slide .flickity-prev-next-button .arrow {
+  fill: #ffffff;
+}
+.slide .flickity-prev-next-button svg {
+  width: 50%;
+  height: 50%;
+}
+.slide .flickity-enabled.is-draggable .flickity-viewport {
+  cursor: url('img/left-arrow.png') 43 40, e-resize;
+  cursor: url('img/left-arrow.svg') 43 40, e-resize;
+  cursor: -webkit-image-set(url('img/left-arrow.png') 1x, url('img/left-arrow@2x.png') 2x) 43 40, e-resize;
+}
+.slide_close {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  width: 20px;
+  position: absolute;
+  top: -25px;
+  left: 15px;
+  z-index: 99999;
+  cursor: pointer;
+}
+.slide .carousel-cell {
+  width: 100%;
+  /* full width */
+  height: 100%;
+  /* height of carousel */
+  margin-right: 1px;
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  .slide {
+    width: 90%;
+  }
+  .slide_inner {
+    height: 25em;
+  }
+  .slide_inner.open {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) and (orientation: landscape) {
+  .slide_inner {
+    height: 32em;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 766px) {
+  .slide {
+    width: 100%;
+    padding: 7px 0;
+  }
+  .slide_inner {
+    height: 9em;
+  }
+  .slide_inner.open {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 766px) and (orientation: landscape) {
+  .slide_inner {
+    height: 18em;
+  }
+}
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
   body .wrap .overlay ul li {
     line-height: 33px;
@@ -2722,17 +2759,6 @@ select {
     padding: 0;
     width: 90%;
   }
-  body .wrap .container .slide {
-    width: 90%;
-  }
-  body .wrap .container .slide .slide_inner {
-    height: 25em;
-  }
-  body .wrap .container .slide .slide_inner.open {
-    -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-            transform: scale(1.05);
-  }
   body .wrap .container .grid .shauna {
     margin-top: 186px;
   }
@@ -2747,9 +2773,6 @@ select {
   }
 }
 @media only screen and (min-width: 767px) and (max-width: 1024px) and (orientation: landscape) {
-  body .wrap .container .slide .slide_inner {
-    height: 32em;
-  }
   body .wrap .hero_tf .img_block {
     background: url("img/horse-tab.jpg") no-repeat;
     background-size: cover;
@@ -2917,18 +2940,6 @@ select {
     width: 100%;
     padding: 7px 0;
   }
-  body .wrap .container .slide {
-    width: 100%;
-    padding: 7px 0;
-  }
-  body .wrap .container .slide .slide_inner {
-    height: 9em;
-  }
-  body .wrap .container .slide .slide_inner.open {
-    -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-            transform: scale(1.05);
-  }
   body .wrap .container .info p {
     padding: 10px 10px 0px 0px;
   }
@@ -2997,26 +3008,29 @@ select {
   body .wrap .hero_lg .l_form {
     margin: 70px auto 25px;
   }
-  body .wrap .hero .img_block_sr {
-    background: url("img/bee-2m.jpg") no-repeat;
-  }
-  body .wrap .hero .img_block_lp {
-    background: url("img/DSC02018-sm 2.jpg") no-repeat;
-  }
-  body .wrap .hero .img_block_sl {
-    background: url("img/oranges-sm.jpg") no-repeat;
-  }
-  body .wrap .hero .img_block_tf {
-    background: url("img/horse-bg.jpg") no-repeat;
-  }
   body .wrap .hero .img_block_bt {
-    background: url("img/Benoit-Color-bg.jpg") no-repeat;
+    background: url("img/Benoit-Color-bg.jpg") center / cover no-repeat;
   }
   body .wrap .hero .img_block_lk {
     background: url("img/Lionel-desktop.jpg") center / cover no-repeat;
   }
-  body .wrap .container .slide .slide_inner {
-    height: 18em;
+  body .wrap .hero .img_block_sm {
+    background: url("img/Shauna-BW.jpg") center / cover no-repeat;
+  }
+  body .wrap .hero .img_block_ta {
+    background: url("img/St-Emilion-Still-Header-NEW.jpg") center / cover no-repeat;
+  }
+  body .wrap .hero .img_block_lp {
+    background: url("img/DSC02018-sm.jpg") center / cover no-repeat;
+  }
+  body .wrap .hero .img_block_sl {
+    background: url("video/sleeping-lady_bg.jpg") center / cover no-repeat;
+  }
+  body .wrap .hero .img_block_tf {
+    background: url("img/horse-bg.jpg") center / cover no-repeat;
+  }
+  body .wrap .hero .img_block_sr {
+    background: url("img/Bee.jpg") center / cover no-repeat;
   }
 }
 .vs2x-s6 {
