@@ -1234,14 +1234,14 @@ body .wrap .hero .btn {
   z-index: 10;
 }
 body .wrap .hero_hm .pre_vid {
-  background: url("video/homepage_bg.jpg") no-repeat;
+  background: url("img/homepage_bg.jpg") no-repeat;
   background-size: cover;
 }
 body .wrap .hero_hm .img_block {
   background-size: cover;
 }
 body .wrap .hero_sr .pre_vid {
-  background: url("video/spring_bg.jpg") no-repeat;
+  background: url("img/spring_bg.jpg") no-repeat;
   background-size: cover;
 }
 body .wrap .hero_sr .img_block {
@@ -1249,7 +1249,7 @@ body .wrap .hero_sr .img_block {
   background-size: cover;
 }
 body .wrap .hero_lp .pre_vid {
-  background: url("video/les-paradis_bg.jpg") no-repeat;
+  background: url("img/les-paradis_bg.jpg") no-repeat;
   background-size: cover;
 }
 body .wrap .hero_lp .img_block {
@@ -1257,11 +1257,11 @@ body .wrap .hero_lp .img_block {
   background-size: cover;
 }
 body .wrap .hero_sl .pre_vid {
-  background: url("video/sleeping-lady_bg.jpg") no-repeat;
+  background: url("img/sleeping-lady_bg.jpg") no-repeat;
   background-size: cover;
 }
 body .wrap .hero_sl .img_block {
-  background: url("video/sleeping-lady_bg.jpg") no-repeat;
+  background: url("img/sleeping-lady_bg.jpg") no-repeat;
   background-size: cover;
 }
 body .wrap .hero_ta .pre_vid {
@@ -1273,7 +1273,7 @@ body .wrap .hero_ta .img_block {
   background-size: cover;
 }
 body .wrap .hero_tf .pre_vid {
-  background: url("video/horse-tab.jpg") no-repeat;
+  background: url("img/horse-tab.jpg") no-repeat;
   background-size: cover;
 }
 body .wrap .hero_tf .img_block {
@@ -3052,7 +3052,7 @@ select {
     background: url("img/DSC02018-sm.jpg") center / cover no-repeat;
   }
   body .wrap .hero .img_block_sl {
-    background: url("video/sleeping-lady_bg.jpg") center / cover no-repeat;
+    background: url("img/sleeping-lady_bg.jpg") center / cover no-repeat;
   }
   body .wrap .hero .img_block_tf {
     background: url("img/horse-bg.jpg") center / cover no-repeat;
