@@ -1,5 +1,3 @@
 #!/bin/sh
 
-echo 'start script: '$NODE_ENV
-
-yarn build
+nodemon --watch src/less -e less --exec '/bin/sh' bin/compile-less

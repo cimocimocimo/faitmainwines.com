@@ -4,10 +4,11 @@
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^7.0.1",
+    "browser-sync": "^2.18.8",
     "less": "^2.7.2",
+    "nodemon": "^1.11.0",
     "postcss": "^6.0.1",
-    "postcss-cli": "^4.0.0",
-    "watch": "^1.0.2"
+    "postcss-cli": "^4.0.0"
   },
   "license": "MIT",
   "main": "src/index.js",

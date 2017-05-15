@@ -13,5 +13,6 @@
 SOURCE=src/less/style.less;
 DESTINATION=dist/style.css;
 
-CMD='lessc $SOURCE'
-eval $CMD | postcss --no-map --use autoprefixer > $DESTINATION
+eval lessc $SOURCE | \
+    postcss --no-map --use autoprefixer > tmp/style.css && \
+    mv tmp/style.css $DESTINATION
