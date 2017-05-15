@@ -89,7 +89,8 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -152,6 +153,7 @@ button:focus {
   /* No interference */
   left: -100%;
   /* CSS3 Transition */
+  -o-transition: opacity .5s;
   transition: opacity .5s;
   -webkit-transition: opacity .5s;
   top: 0;
@@ -254,7 +256,8 @@ http://flickity.metafizzy.co
 }
 .flickity-prev-next-button:focus {
   outline: none;
-  box-shadow: 0 0 0 5px #09F;
+  -webkit-box-shadow: 0 0 0 5px #09F;
+          box-shadow: 0 0 0 5px #09F;
 }
 .flickity-prev-next-button:active {
   filter: alpha(opacity=60);
@@ -380,6 +383,7 @@ p {
 a {
   color: #26257C;
   -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
   letter-spacing: 1px;
   font-weight: 600;
@@ -519,6 +523,7 @@ a:hover {
   cursor: pointer;
   z-index: 100;
   -webkit-transition: opacity .25s ease;
+  -o-transition: opacity .25s ease;
   transition: opacity .25s ease;
   z-index: 9999;
   margin-left: 52px;
@@ -543,6 +548,7 @@ a:hover {
   cursor: pointer;
   z-index: 100;
   -webkit-transition: opacity .25s ease;
+  -o-transition: opacity .25s ease;
   transition: opacity .25s ease;
   margin-left: 50px;
 }
@@ -553,6 +559,7 @@ a:hover {
   font-size: 33px;
   color: #231F20;
   -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .nav_wrap .button_container .fa:hover {
@@ -565,6 +572,7 @@ a:hover {
   top: 0;
   left: 36px;
   -webkit-transition: all .35s ease;
+  -o-transition: all .35s ease;
   transition: all .35s ease;
   cursor: pointer;
   font-family: "proxima-nova", sans-serif;
@@ -590,6 +598,7 @@ a:hover {
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity .35s, visibility .35s;
+  -o-transition: opacity .35s, visibility .35s;
   transition: opacity .35s, visibility .35s;
   overflow: hidden;
   z-index: 99999;
@@ -725,6 +734,7 @@ a:hover {
   height: 1px;
   background: #515759;
   -webkit-transition: .35s;
+  -o-transition: .35s;
   transition: .35s;
 }
 .overlay ul li a:hover {
@@ -928,12 +938,14 @@ body:after {
   /*background-attachment: fixed;*/
   /*background-color: rgba(0,0,0, 0.4);*/
   background-image: -webkit-linear-gradient(rgba(95, 95, 95, 0.125) 2px, transparent 2px), -webkit-linear-gradient(left, rgba(95, 95, 95, 0.125) 2px, transparent 2px);
+  background-image: -o-linear-gradient(rgba(95, 95, 95, 0.125) 2px, transparent 2px), -o-linear-gradient(left, rgba(95, 95, 95, 0.125) 2px, transparent 2px);
   background-image: linear-gradient(rgba(95, 95, 95, 0.125) 2px, transparent 2px), linear-gradient(90deg, rgba(95, 95, 95, 0.125) 2px, transparent 2px);
   background-repeat: repeat;
   background-size: 8px 8px, 8px 8px;
 }
 .umbg-overlay-stairs {
   background: -webkit-linear-gradient(27deg, rgba(153, 153, 153, 0.125) 23%, transparent 23%) 7px 0, -webkit-linear-gradient(27deg, transparent 74%, rgba(153, 153, 153, 0.125) 78%), -webkit-linear-gradient(27deg, transparent 34%, rgba(153, 153, 153, 0.125) 38%, rgba(153, 153, 153, 0.125) 58%, transparent 62%), rgba(0, 0, 0, 0.5);
+  background: -o-linear-gradient(27deg, rgba(153, 153, 153, 0.125) 23%, transparent 23%) 7px 0, -o-linear-gradient(27deg, transparent 74%, rgba(153, 153, 153, 0.125) 78%), -o-linear-gradient(27deg, transparent 34%, rgba(153, 153, 153, 0.125) 38%, rgba(153, 153, 153, 0.125) 58%, transparent 62%), rgba(0, 0, 0, 0.5);
   background: linear-gradient(63deg, rgba(153, 153, 153, 0.125) 23%, transparent 23%) 7px 0, linear-gradient(63deg, transparent 74%, rgba(153, 153, 153, 0.125) 78%), linear-gradient(63deg, transparent 34%, rgba(153, 153, 153, 0.125) 38%, rgba(153, 153, 153, 0.125) 58%, transparent 62%), rgba(0, 0, 0, 0.5);
   background-size: 16px 48px;
 }
@@ -1333,6 +1345,7 @@ body .wrap .account_hero .log_in button {
   text-decoration: underline;
   color: #26257C;
   -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
   display: block;
   letter-spacing: 1px;
@@ -1395,6 +1408,7 @@ body .wrap .account_hero .log_in form .vs2x-row button {
   text-decoration: underline;
   color: #26257C;
   -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
   display: block;
   width: 100%;
@@ -1600,6 +1614,7 @@ body .wrap .account_hero .regi button {
   text-decoration: underline;
   color: #26257C;
   -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
   display: block;
   width: 100%;
@@ -1673,6 +1688,7 @@ body .wrap .account_hero .acc_form form .form_area .sub {
   color: #26257C;
   letter-spacing: 1px;
   -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 body .wrap .hero_lg .l_form form .form_area .sub:hover,
@@ -2126,6 +2142,7 @@ body .wrap .container .people a img {
   -moz-opacity: 0.4;
   opacity: 0.4;
   -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -2172,6 +2189,7 @@ body .wrap .container .soon {
 }
 body .wrap .container .soon a img {
   -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
   transition: all 0.1s;
 }
 body .wrap .container .soon a .ops {
@@ -2210,6 +2228,7 @@ body .wrap .container .grid .grid-item a img {
   -moz-opacity: 0.4;
   opacity: 0.4;
   -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -2497,6 +2516,7 @@ body .wrap footer .foot_logo {
   color: #26257C;
   font-family: "adobe-garamond-pro", sans-serif;
   -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
   letter-spacing: 1px;
   font-weight: 600;
@@ -2550,6 +2570,7 @@ select {
 }
 .slide {
   -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
   padding: 40px 0;
   width: 80%;
@@ -2562,6 +2583,7 @@ select {
   -moz-opacity: 0;
   opacity: 0;
   -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
   position: fixed;
   height: 100%;
@@ -2578,6 +2600,7 @@ select {
   -moz-opacity: 1;
   opacity: 1;
   -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
   visibility: visible;
   cursor: url('img/Icons-x.png') 4 12, auto;
@@ -2585,6 +2608,7 @@ select {
 }
 .slide_inner {
   -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
@@ -2596,6 +2620,7 @@ select {
 }
 .slide_inner img {
   -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
@@ -2608,6 +2633,7 @@ select {
 }
 .slide_inner.open {
   -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -2633,6 +2659,7 @@ select {
 }
 .slide .flickity-prev-next-button {
   -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-opacity: 0;
   -moz-opacity: 0;

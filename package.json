@@ -1,0 +1,22 @@
+{
+  "author": "Aaron Cimolini <aaron@cimolini.com>",
+  "browserslist": "> 1%, last 4 versions, Firefox ESR, Opera 12.1",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^7.0.1",
+    "less": "^2.7.2",
+    "postcss": "^6.0.1",
+    "postcss-cli": "^4.0.0",
+    "watch": "^1.0.2"
+  },
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "faitmainwines.com",
+  "repository": "cimo-github:cimocimocimo/faitmainwines.com.git",
+  "scripts": {
+    "build": "NODE_ENV=${NODE_ENV:=production} bin/build",
+    "less": "NODE_ENV=${NODE_ENV:=production} bin/compile-less",
+    "start": "NODE_ENV=development bin/start"
+  },
+  "version": "1.0.0"
+}

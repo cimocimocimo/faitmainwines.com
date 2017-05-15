@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# in development we want:
+# - less compiled to css
+# - css autoprefixed
+# - source maps
+# in production:
+# - less compiled to css
+# - css autoprefixed
+# - NO sourcemaps
+# - css minified
+
+SOURCE=src/less/style.less;
+DESTINATION=dist/style.css;
+
+CMD='lessc $SOURCE'
+eval $CMD | postcss --no-map --use autoprefixer > $DESTINATION

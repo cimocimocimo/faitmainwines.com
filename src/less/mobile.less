@@ -186,15 +186,6 @@
                     padding: 0;
                     width: 90%;
                 }
-                .slide{
-                    width: 90%;
-                    .slide_inner{
-                        height: 25em;
-                    }
-                    .slide_inner.open {
-                        transform: scale(1.05);
-                    }
-                }
                 .grid{
                     .shauna{
                         margin-top: 186px;
@@ -217,22 +208,11 @@
 @media only screen and (min-width: 767px) and (max-width: 1024px) and (orientation: landscape) {
     body{
         .wrap {
-            .container{
-                .slide{
-                    .slide_inner{
-                        height: 32em;
-                    }
-                }
-            }
             .hero_tf{
                 .img_block{
                     background: url("img/horse-tab.jpg") no-repeat;
                     background-size: cover;
                 }
-            }
-            header{
-            }
-            footer{
             }
         }
     }
@@ -453,16 +433,6 @@
                     width: 100%;
                     padding: 7px 0;
                 }
-                .slide{
-                    width: 100%;
-                    padding: 7px 0;
-                    .slide_inner{
-                        height: 9em;
-                    }
-                    .slide_inner.open {
-                        transform: scale(1.05);
-                    }
-                }
                 .info{
                     p {
                         padding: 10px 10px 0px 0px;
@@ -557,36 +527,35 @@
                 }
             }
             .hero{
-                .img_block_sr{
-                    background: url("img/bee-2m.jpg") no-repeat;
-                }
-                .img_block_lp{
-                    background: url("img/DSC02018-sm 2.jpg") no-repeat;
-                }
-                .img_block_sl{
-                    background: url("img/oranges-sm.jpg") no-repeat;
-                }
-                .img_block_tf{
-                    background: url("img/horse-bg.jpg") no-repeat;
-                }
                 .img_block_bt{
-                  background: url("img/Benoit-Color-bg.jpg") no-repeat;
+                  background: url("img/Benoit-Color-bg.jpg") center / cover no-repeat;
                 }
                 .img_block_lk {
                   background: url("img/Lionel-desktop.jpg") center / cover no-repeat;
                 }
-            }
-            .container{
-                .slide{
-                    .slide_inner{
-                        height: 18em;
-                    }
+                .img_block_sm {
+                  background: url("img/Shauna-BW.jpg") center / cover no-repeat;
+                }
+                .img_block_ta {
+                  background: url("img/St-Emilion-Still-Header-NEW.jpg") center / cover no-repeat;
+                }
+                .img_block_lp {
+                  background: url("img/DSC02018-sm.jpg") center / cover no-repeat;
+                }
+                .img_block_sl{
+                  background: url("video/sleeping-lady_bg.jpg") center/ cover no-repeat;
+                }
+                .img_block_tf{
+                  background: url("img/horse-bg.jpg") center / cover no-repeat;
+                }
+                .img_block_sr{
+                  background: url("img/Bee.jpg") center / cover no-repeat;
                 }
             }
-            footer{
-            }
-        }
+       }
     }
+
+
 }
 .vs2x-s6 {
     width: 100%!important;

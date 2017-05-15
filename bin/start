@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo 'start script: '$NODE_ENV
+
+yarn build
