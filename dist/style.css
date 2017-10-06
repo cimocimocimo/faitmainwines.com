@@ -1205,13 +1205,17 @@ body .wrap .hero .hero_text h1 hr {
 body .wrap .hero .img_block_bt {
   background: url("img/Benoit-Color-bg.jpg") no-repeat;
   background-size: cover;
+  background-position: 37.8% 37.2%;
 }
 body .wrap .hero .img_block_sm {
-  background: url("img/Shauna-BW.jpg") no-repeat;
+  background: url("img/B_Shauna_2983-landscape.jpg") no-repeat;
   background-size: cover;
+  background-position: 75.1% 35.5%;
 }
 body .wrap .hero .img_block_lk {
-  background: url("img/Lionel-desktop.jpg") center / cover no-repeat;
+  background: url("img/Lionel-desktop.jpg") no-repeat;
+  background-size: cover;
+  background-position: 58.8% 36.7%;
 }
 body .wrap .hero .img_block {
   margin-bottom: -40px;
@@ -2876,13 +2880,16 @@ select {
     background: url("img/bee-2m-sm.jpg") no-repeat;
   }
   body .wrap .hero .img_block_bt {
-    background: url("img/Benoito-port.jpg") no-repeat;
+    background-image: url("img/Benoit-port.jpg");
+    background-position: 58.9% 36.7%;
   }
   body .wrap .hero .img_block_sm {
-    background: url("img/Shauna-BW-small.jpg") no-repeat;
+    background-image: url("img/B_Shauna_2983-portrait.jpg");
+    background-position: 65.4% 35.3%;
   }
   body .wrap .hero .img_block_lk {
-    background: url("img/Lionel-mobile.jpg") center / cover no-repeat;
+    background-image: url("img/Lionel-mobile.jpg");
+    background-position: 48.6% 38.4%;
   }
   body .wrap .hero .img_block {
     background-size: cover;
@@ -3037,13 +3044,16 @@ select {
     margin: 70px auto 25px;
   }
   body .wrap .hero .img_block_bt {
-    background: url("img/Benoit-Color-bg.jpg") center / cover no-repeat;
+    background-image: url("img/Benoit-Color-bg.jpg");
+    background-position: 37.8% 37.2%;
   }
   body .wrap .hero .img_block_lk {
-    background: url("img/Lionel-desktop.jpg") center / cover no-repeat;
+    background-image: url("img/Lionel-desktop.jpg");
+    background-position: 58.8% 36.7%;
   }
   body .wrap .hero .img_block_sm {
-    background: url("img/Shauna-BW.jpg") center / cover no-repeat;
+    background-image: url("img/B_Shauna_2983-landscape.jpg");
+    background-position: 75.1% 35.5%;
   }
   body .wrap .hero .img_block_ta {
     background: url("img/St-Emilion-Still-Header-NEW.jpg") center / cover no-repeat;
