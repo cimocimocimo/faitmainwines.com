@@ -1217,6 +1217,16 @@ body .wrap .hero .img_block_lk {
   background-size: cover;
   background-position: 58.8% 36.7%;
 }
+body .wrap .hero .img_block_aj {
+  background: url("img/B_Austin_2954-landscape.jpg") no-repeat;
+  background-size: cover;
+  background-position: 48.6% 41.6%;
+}
+body .wrap .hero .img_block_td {
+  background: url("img/W_Tracey_2938-landscape.jpg") no-repeat;
+  background-size: cover;
+  background-position: 33.1% 24.7%;
+}
 body .wrap .hero .img_block {
   margin-bottom: -40px;
 }
@@ -2304,6 +2314,9 @@ body .wrap .container .text h1 hr {
   background: #515759;
   border: none;
 }
+body .wrap .container .text h2 {
+  text-align: center;
+}
 body .wrap .container .text p {
   max-width: 511px;
   margin: 50px auto;
@@ -2891,6 +2904,14 @@ select {
     background-image: url("img/Lionel-mobile.jpg");
     background-position: 48.6% 38.4%;
   }
+  body .wrap .hero .img_block_aj {
+    background-image: url("img/B_Austin_2954-portrait.jpg");
+    background-position: 53.4% 41.5%;
+  }
+  body .wrap .hero .img_block_td {
+    background-image: url("img/W_Tracey_2938-portrait.jpg");
+    background-position: 51.7% 24.7%;
+  }
   body .wrap .hero .img_block {
     background-size: cover;
   }
@@ -3054,6 +3075,14 @@ select {
   body .wrap .hero .img_block_sm {
     background-image: url("img/B_Shauna_2983-landscape.jpg");
     background-position: 75.1% 35.5%;
+  }
+  body .wrap .hero .img_block_aj {
+    background-image: url("img/B_Austin_2954-landscape.jpg");
+    background-position: 48.6% 41.6%;
+  }
+  body .wrap .hero .img_block_td {
+    background-image: url("img/W_Tracey_2938-landscape.jpg");
+    background-position: 33.1% 24.7%;
   }
   body .wrap .hero .img_block_ta {
     background: url("img/St-Emilion-Still-Header-NEW.jpg") center / cover no-repeat;
