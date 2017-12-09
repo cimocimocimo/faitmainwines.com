@@ -5,3 +5,4 @@ dist/video
 
 tmp/*
 !tmp/.gitkeep
+test/

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+panini --root=src/pages \
+       --layouts=src/layouts \
+       --partials=src/partials \
+       --data=src/data \
+       --output=test \
+       'src/pages/**/*.html' # glob of source files
