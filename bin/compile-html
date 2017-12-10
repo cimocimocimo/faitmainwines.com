@@ -4,5 +4,5 @@ panini --root=src/pages \
        --layouts=src/layouts \
        --partials=src/partials \
        --data=src/data \
-       --output=test \
+       --output=dist \
        'src/pages/**/*.html' # glob of source files

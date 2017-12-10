@@ -1,11 +1,20 @@
 #!/bin/sh
 
+# watch directory. You need a --watch flag per directory watched.
+# only watch these file extensions
+
 nodemon --watch src/less \
-        -e less \
-        --exec '/bin/sh' \
-        bin/compile-less \
-    & \
-    src/less/
-    browser-sync start \
-                 --server 'dist' \
-                 --files 'dist/style.css'
+        --ext less \
+        --exec '/bin/sh' bin/compile-less &
+
+nodemon --watch src/pages \
+        --watch src/layouts \
+        --watch src/partials \
+        --watch src/data \
+        --ext html,hbs \
+        --exec '/bin/sh' bin/compile-html &
+
+browser-sync start \
+             --server 'dist' \
+             --files 'dist/*' \
+             --reload-debounce 200
