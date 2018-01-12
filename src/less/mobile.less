@@ -62,15 +62,15 @@
       background-size: cover;
     }
   }
-  .container {
-    .page_img {
-      padding: 0;
-      width: 90%;
-    }
-    .grid {
-      .shauna {
-        margin-top: 186px;
-      }
+
+  .page_img {
+    padding: 0;
+    width: 90%;
+  }
+
+  .grid {
+    .shauna {
+      margin-top: 186px;
     }
   }
 
@@ -241,89 +241,91 @@
       background-size: cover;
     }
   }
+
   .container {
     padding: 0 15px;
-    .welcome_text {
-      margin: 145px auto;
-      p {
+  }
+
+  .welcome_text {
+    margin: 145px auto;
+    p {
+      font-size: 16px;
+    }
+  }
+  .text {
+    p {
+      margin: 50px auto 40px;
+    }
+    .side_icon {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  .grid {
+    .grid-item {
+      .column(12);
+      margin-bottom: 15px;
+      padding: 0;
+      &:nth-child(odd) {
+        padding-left: 0;
+      }
+      &:nth-child(even) {
+        padding-right: 0;
+      }
+      a {
+        h2 {
+          bottom: 70px;
+        }
+      }
+    }
+    .sleeping {
+      left: 0 !important;
+    }
+    .benoit {
+      padding: 0;
+      left: 0 !important;
+    }
+    .shauna {
+      margin-top: 0;
+      padding: 0;
+    }
+  }
+
+  .spring,
+  .winter {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .people {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+  .austin {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .page_img {
+    width: 100%;
+    padding: 7px 0;
+  }
+  .info {
+    p {
+      padding: 10px 10px 0px 0px;
+      span{
+        top: 0;
+      }
+    }
+    .half_big {
+      font-size: 17px;
+      padding-right: 10px;
+      span {
         font-size: 16px;
-      }
-    }
-    .text {
-      p {
-        margin: 50px auto 40px;
-      }
-      .side_icon {
-        &:after {
-          display: none;
-        }
-      }
-    }
-    .grid {
-      .grid-item {
-        .column(12);
-        margin-bottom: 15px;
-        padding: 0;
-        &:nth-child(odd) {
-          padding-left: 0;
-        }
-        &:nth-child(even) {
-          padding-right: 0;
-        }
-        a {
-          h2 {
-            bottom: 70px;
-          }
-        }
-      }
-      .sleeping {
-        left: 0 !important;
-      }
-      .benoit {
-        padding: 0;
-        left: 0 !important;
-      }
-      .shauna {
-        margin-top: 0;
-        padding: 0;
-      }
-    }
-
-    .spring,
-    .winter {
-      width: 100%;
-      margin-bottom: 30px;
-    }
-
-    .people {
-      width: 100%;
-      margin: auto;
-      padding: 0;
-    }
-    .austin {
-      width: 100%;
-      margin: auto;
-      padding: 0;
-      margin-bottom: 30px;
-    }
-    .page_img {
-      width: 100%;
-      padding: 7px 0;
-    }
-    .info {
-      p {
-        padding: 10px 10px 0px 0px;
-        span{
-          top: 0;
-        }
-      }
-      .half_big {
-        font-size: 17px;
-        padding-right: 10px;
-        span {
-          font-size: 16px;
-          padding: 0 9px;
-        }
+        padding: 0 9px;
       }
     }
   }

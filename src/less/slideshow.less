@@ -1,0 +1,171 @@
+// slideshow
+@aspect: 0.66666;
+.slide {
+  .transition(0.2s);
+
+  margin: 40px auto 0;
+  width: 80%;
+  cursor: pointer;
+  position: relative;
+
+  &_overlay {
+    .opacity(0%);
+    .transition(0.2s);
+
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(51, 49, 50, 0.95);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+  }
+
+  .so_open {
+    .opacity(100%);
+    .transition(0.2s);
+
+    visibility: visible;
+    cursor: url('img/Icons-x.png') 4 12, auto;
+    z-index: 9997;
+  }
+
+  // required for responsive images
+  &_container {
+    position: relative;
+    padding-bottom: percentage(@aspect);
+  }
+
+  &_inner {
+    .transition(0.2s);
+    .scale(1);
+
+    overflow: hidden;
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      .transition(0.2s);
+      .opacity(50%);
+    }
+
+    &:hover {
+      img{
+        .opacity(100%);
+      }
+    }
+
+    &.open {
+      .transition(0.2s);
+      .scale(1.1);
+
+      z-index: 9999;
+
+      img{
+        z-index: 99999;
+        position: relative;
+        opacity: 1;
+        cursor: default;
+      }
+
+      .flickity-prev-next-button{
+        .opacity(100%);
+
+        background: none;
+
+        &:disabled {
+          filter: alpha(opacity=30);
+          opacity: .3;
+          cursor: auto;
+        }
+      }
+    }
+  }
+
+  .flickity-prev-next-button {
+    .transition(0.3s);
+    .opacity(0%);
+
+    background: none;
+
+    &:hover{
+      background: none;
+    }
+
+    .arrow {
+      fill: @white;
+    }
+
+    svg {
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  .flickity-enabled.is-draggable .flickity-viewport{
+    // default cursor image for browsers that don't support SVG or image-sets
+    cursor: url('img/left-arrow.png') 43 40, e-resize;
+    // Firefox >= 4.0 supports cursor property with svg images
+    cursor: url('img/left-arrow.svg') 43 40, e-resize;
+    // Webkit based browsers support image sets for hi-dpi displays
+    cursor: -webkit-image-set(
+      url('img/left-arrow.png') 1x,
+      url('img/left-arrow@2x.png') 2x
+    ) 43 40, e-resize;
+  }
+
+  &_close {
+    .opacity(100%);
+
+    width: 20px;
+    position: absolute;
+    top: -25px;
+    left: 15px;
+    z-index: 99999;
+    cursor: pointer;
+  }
+
+  .carousel-cell {
+    width: 100%; /* full width */
+    height: 100%; /* height of carousel */
+    margin-right: 1px;
+  }
+
+  //Tablet
+  @media only screen and (min-width : 767px) and (max-width : 1024px) {
+    width: 90%;
+
+    &_inner {
+      &.open {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  @media only screen and (min-width: 767px) and (max-width: 1024px) and (orientation: landscape) {
+    width: 80%;
+  }
+
+  //Mobile
+  @media only screen and (min-width: 320px) and (max-width: 766px) {
+    width: 100%;
+    padding-left: 7px;
+    padding-right: 7px;
+
+    &_inner {
+      &.open {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 766px) and (orientation: landscape){
+    width: 80%;
+  }
+}
