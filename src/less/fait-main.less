@@ -985,89 +985,6 @@ body {
   }
 }
 
-.spring,
-.winter,
-.people {
-  margin: 0 auto 120px;
-  position: relative;
-
-  a{
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    display: block;
-
-    img{
-      .opacity(40%);
-      .transition(0.2s);
-      backface-visibility: hidden;
-      -webkit-backface-visibility: hidden;
-    }
-
-    .ops{
-      position: absolute;
-      .opacity(0);
-    }
-
-    h2{
-      color: @grey_link;
-      text-align: center;
-      width: 100%;
-      margin: 25px auto;
-
-      hr{
-        width: 40px;
-        height: 2px;
-        background: @grey_link;
-        border: none
-      }
-    }
-  }
-
-  &:hover{
-    h2{
-      color: @blue;
-
-      hr{
-        background: @blue;
-      }
-    }
-
-    img{
-      .opacity(100%);
-    }
-  }
-}
-
-.soon {
-  position: relative;
-  margin-top: 60px;
-  margin-bottom: 60px;
-
-  a{
-    img{
-      .transition(0.1s);
-    }
-
-    .ops{
-      position: absolute;
-      .opacity(0);
-    }
-  }
-
-  &:hover{
-    .ops{
-      .opacity(100%);
-    }
-  }
-}
-
-.spring,
-.winter {
-  width: 76%;
-  margin-bottom: 65px;
-}
-
 .grid{
   clear: both;
 
@@ -1152,11 +1069,64 @@ body {
   }
 }
 
-.austin {
-  width: 52%;
-  margin: auto;
-  margin-bottom: 70px;
-  float: none;
+.spring,
+.winter,
+.people {
+  margin: 0 auto 120px;
+  position: relative;
+
+  a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: block;
+
+    img{
+      .opacity(40%);
+      .transition(0.2s);
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+
+    .ops{
+      position: absolute;
+      .opacity(0);
+    }
+
+    h2{
+      color: @grey_link;
+      text-align: center;
+      width: 100%;
+      margin: 25px auto;
+
+      hr{
+        width: 40px;
+        height: 2px;
+        background: @grey_link;
+        border: none
+      }
+    }
+  }
+
+  &:hover{
+    h2{
+      color: @blue;
+
+      hr{
+        background: @blue;
+      }
+    }
+
+    img{
+      .opacity(100%);
+    }
+  }
+}
+
+.spring,
+.winter {
+  width: 76%;
+  margin-bottom: 65px;
 }
 
 .people {
@@ -1165,10 +1135,40 @@ body {
   float: none;
 }
 
-.text{
+.soon {
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  a{
+    img{
+      .transition(0.1s);
+    }
+
+    .ops{
+      position: absolute;
+      .opacity(0);
+    }
+  }
+
+  &:hover{
+    .ops{
+      .opacity(100%);
+    }
+  }
+}
+
+.austin {
+  width: 52%;
+  margin: auto;
+  margin-bottom: 70px;
+  float: none;
+}
+
+.text {
   position: relative;
 
-  .emblem{
+  .emblem {
     width: 15px;
     margin: 50px auto;
   }
