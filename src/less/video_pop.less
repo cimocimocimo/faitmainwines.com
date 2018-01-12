@@ -1,4 +1,3 @@
-
 /* Fullscreen Overlay */
 .vid_overlay {
 	width: 100%;
@@ -18,9 +17,6 @@
 	-webkit-transition: opacity .5s;
 	top: 0;
 	left: 0 !important;
-	.player{
-
-	}
 }
 
 /* 90% width container */
@@ -53,18 +49,16 @@
 	opacity: 1;
 	z-index: 20;
 }
-@media only screen
-	and (min-width : 1604px)  {
-		.video-container {
-			width: 90%;
-		}
-		.close {
-			top: -30px;
-		}
-}
-.vid_overlay{
 
+@media only screen and (min-width : 1604px)  {
+	.video-container {
+		width: 90%;
+	}
+	.close {
+		top: -30px;
+	}
 }
+
 .vid_overlay.show{
 	z-index: 9999999999;
 	.player{
