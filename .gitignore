@@ -5,3 +5,4 @@ dist/video
 dist/*.html
 tmp/*
 !tmp/.gitkeep
+dist/style.css

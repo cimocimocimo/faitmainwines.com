@@ -935,7 +935,9 @@ body{
           margin: 50px auto 0;
         }
       }
-      .spring ,.people{
+      .spring,
+      .winter,
+      .people {
         margin: 0 auto 120px;
         position: relative;
         a{
@@ -952,7 +954,7 @@ body{
           .ops{
             position: absolute;
             .opacity(0);
-          } 
+          }
           h2{
             color: @grey_link;
             text-align: center;
@@ -978,32 +980,38 @@ body{
           }
         }
       }
-      .soon{
-        position: relative; 
-        margin-top: 60px;  
-        margin-bottom: 60px;    
+
+      .soon {
+        position: relative;
+        margin-top: 60px;
+        margin-bottom: 60px;
+
         a{
           img{
             .transition(0.1s);
           }
+
           .ops{
             position: absolute;
             .opacity(0);
           }
         }
+
         &:hover{
           .ops{
             .opacity(100%);
           }
         }
       }
-      .spring{
+
+      .spring,
+      .winter {
         width: 76%;
         margin-bottom: 65px;
       }
+
       .grid{
         clear: both;
-
 
         .les {
           padding: 0 0 0 5%;
