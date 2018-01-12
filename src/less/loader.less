@@ -1,0 +1,62 @@
+.loader-container {
+  background: @white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999999999;
+
+  .loader{
+    .v_align;
+    position: absolute;
+    width: 100%;
+
+    .logo{
+      width: 166px;
+      margin: auto;
+      position: relative;
+      top: -62px;
+    }
+
+    .expand {
+      width: 100%;
+      margin: auto;
+      height: 1px;
+      margin: 2px 0;
+      background: #333;
+      position: absolute;
+      -moz-animation: fullexpand 40s linear;
+      -webkit-animation: fullexpand 40s linear;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      max-width: 164px;
+      left: 50%;
+      top: 10px;
+    }
+
+    /* Full Width Animation Bar */
+    @keyframes fullexpand {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+
+    @-webkit-keyframes fullexpand {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+  }
+}
