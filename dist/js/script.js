@@ -12,7 +12,7 @@
   }
 
   // required to call before document ready event
-  heroVideoInit();
+  heroVideoInit()
 
   function fullscreen(){
     var winX = $win.width()
@@ -21,21 +21,21 @@
 	  $('.hero , .img_block, .covervid-wrapper').css({
 		  width: winX,
 		  height: winY,
-	  });
+	  })
 
 	  $('.hero_no_play').css({
 		  width: winX,
 		  height: winY + 40
-	  });
+	  })
   }
 
   function heroFullscreenInit(){
-	  fullscreen();
+	  fullscreen()
 
 	  // Run the function in case of window resize
     $win.resize(function() {
-		  fullscreen();
-	  });
+		  fullscreen()
+	  })
   }
 
   function carouselInit() {
@@ -59,68 +59,69 @@
   }
 
   $win.load(function() {
-	  $('.loader').delay(300).fadeOut('slow');
-	  $('.loader-container').delay(400).fadeOut();
+	  $('.loader').delay(300).fadeOut('slow')
+	  $('.loader-container').delay(400).fadeOut()
   })
 
   $doc.ready(function() {
     // open the overlay menu
 	  $('#toggle').click(function () {
-		  $(this).toggleClass('active');
-		  $('#overlay').toggleClass('open');
+		  $(this).toggleClass('active')
+		  $('#overlay').toggleClass('open')
       // prevent the body from scrolling
-      $('body').addClass('no-scroll');
-	  });
+      $('body').addClass('no-scroll')
+	  })
 
     // close overlay menu
 	  $('.js-close-overlay').click(function(event){
-      event.preventDefault();
-		  $('#toggle').toggleClass('active');
-		  $('#overlay').toggleClass('open');
+      event.preventDefault()
+		  $('#toggle').toggleClass('active')
+		  $('#overlay').toggleClass('open')
       // allow body scrolling again
-      $('body').removeClass('no-scroll');
-	  });
+      $('body').removeClass('no-scroll')
+	  })
 
 	  $('#foot_toggle').click(function () {
-		  $(this).toggleClass('active');
-		  $('#foot_overlay').toggleClass('open');
-	  });
+		  $(this).toggleClass('active')
+		  $('#foot_overlay').toggleClass('open')
+	  })
 
 	  $('#foot_close').click(function(){
-		  $('#foot_toggle').toggleClass('active');
-		  $('#foot_overlay').toggleClass('open');
-	  });
+		  $('#foot_toggle').toggleClass('active')
+		  $('#foot_overlay').toggleClass('open')
+	  })
 
 	  $win.scroll(function () {
-		  $('.covervid-wrapper , .img_block').css('opacity', 1 - $win.scrollTop() / 800);
-	  });
+		  $('.covervid-wrapper , .img_block')
+        .css('opacity', 1 - $win.scrollTop() / 800)
+	  })
 
 		$('.nav_wrap').sticky({
 			topSpacing: 0
-		});
+		})
 
 	  $('.slide_img').click(function () {
-		  $('.slide_overlay').addClass('so_open');
-		  $('.slide_inner').addClass('open');
-	  });
+		  $('.slide_overlay').addClass('so_open')
+		  $('.slide_inner').addClass('open')
+	  })
 
 	  $('#closeIt').click(function(){
-		  $(this).removeClass('so_open');
-		  $('.slide_inner').removeClass('open');
-	  });
+		  $(this).removeClass('so_open')
+		  $('.slide_inner').removeClass('open')
+	  })
 
-	  var $container = $('.grid');
+	  var $container = $('.grid')
 
     if ($container.length){
 	    $container.imagesLoaded( function(){
 		    $container.masonry({
 			    itemSelector : '.grid-item'
-		    });
-	    });
+		    })
+	    })
     }
 
     heroFullscreenInit()
     carouselInit()
-  });
+  })
 
-}(jQuery));
+}(jQuery))
