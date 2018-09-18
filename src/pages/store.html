@@ -1,79 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<link rel="stylesheet" href="style.css?v=1.4">
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
-		<title>Fait-Main Wines | Cart</title>
-		<meta name="description" content="Wines by Napa Valley winemaker, Benoit Touquette.">
-		<meta name="keywords" content="fait main wines, fait main, benoit touquette, napa valley cabernet, napa cabernet, napa valley wine, cabernet sauvignon, chardonnay, napa red wine, napa valley chardonnay, napa valley winemaker, beckstoffer vineyard, las piedras vineyard, sleeping lady vineyard, toyon farm">
-		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
-		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-		<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-		<link rel="manifest" href="/manifest.json">
-		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-		<meta name="theme-color" content="#ffffff">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-		<script src="https://use.typekit.net/eaz3mft.js"></script>
-		<script>try{Typekit.load({ async: true });}catch(e){}</script>
-	</head>
+---
+title: Cart
+metaDescription: Wines by Napa Valley winemaker, Benoit Touquette.
+metaKeywords: fait main wines, fait main, benoit touquette, napa valley cabernet, napa cabernet, napa valley wine, cabernet sauvignon, chardonnay, napa red wine, napa valley chardonnay, napa valley winemaker, beckstoffer vineyard, las piedras vineyard, sleeping lady vineyard, toyon farm
+---
+<head>
+  {{>head}}
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="https://use.typekit.net/eaz3mft.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
 
-	<body>
-		<div class="loader-container">
-			<div class="loader">
-				<div class="logo">
-					<img src="img/logo.svg" alt="">
+<body>
+	<div class="loader-container">
+		<div class="loader">
+			<div class="logo">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<span class="expand"></span>
+		</div>
+	</div>
+	<div class="wrap">
+    {{>header}}
+		<div class="nav_wrap">
+			<div class="button_container" id="toggle">
+				<img src="img/Icons-ham.svg" alt="menu icon">
+				<span>MENU</span>
+			</div>
+			<div class="join"><a href="account.html">your account</a></div>
+		</div>
+		<div class="desk" data-wow-duration="1s">
+			<div class="cart_main">
+				<h1>Store<hr></h1>
+				<div data-vsPlugin="productList">
+					<noscript>
+					  JavaScript is required to view and purchase our products. 
+					  Please <a href="http://www.enable-javascript.com/" target="_blank">enable this feature in your browser.</a>
+					</noscript>
+					<!--[if lte IE 7]>
+					  To ensure security and usability, this site requires at least Internet Explorer 8 to function properly. 
+					  Please view our site in a <a href="http://www.google.com/chrome">different browser</a>, 
+					  or upgrade to the latest version of <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">Internet Explorer</a>.
+					<![endif]-->
 				</div>
-				<span class="expand"></span>
+				<div class="emblem">
+					<img src="img/emblem.svg" alt="emblem">
+				</div>
 			</div>
 		</div>
-		<div class="wrap">
-      {{>header}}
-			<div class="nav_wrap">
-				<div class="button_container" id="toggle">
-					<img src="img/Icons-ham.svg" alt="menu icon">
-					<span>MENU</span>
-				</div>
-				<div class="join"><a href="account.html">your account</a></div>
-			</div>
-			<div class="desk" data-wow-duration="1s">
-				<div class="cart_main">
-					<h1>Store<hr></h1>
-					<div data-vsPlugin="productList">
-					  <noscript>
-					    JavaScript is required to view and purchase our products. 
-					    Please <a href="http://www.enable-javascript.com/" target="_blank">enable this feature in your browser.</a>
-					  </noscript>
-					  <!--[if lte IE 7]>
-					    To ensure security and usability, this site requires at least Internet Explorer 8 to function properly. 
-					    Please view our site in a <a href="http://www.google.com/chrome">different browser</a>, 
-					    or upgrade to the latest version of <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">Internet Explorer</a>.
-					  <![endif]-->
-					</div>
-					<div class="emblem">
-						<img src="img/emblem.svg" alt="emblem">
-					</div>
-				</div>
-			</div>
-      {{>footer}}
-		</div>
-		<script src="js/jquery.sticky.js"></script>
-		<script src="js/imagesloaded.pkgd.min.js"></script>
-		<script src="js/masonry.pkgd.min.js"></script>
-		<script src="js/script.js"></script>
-		<script type="text/javascript" src="https://platform.vinespring.com/scripts/2.0/all.js"></script>
-	</body>
-</html>
+    {{>footer}}
+	</div>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/script.js"></script>
+	<script type="text/javascript" src="https://platform.vinespring.com/scripts/2.0/all.js"></script>
+</body>

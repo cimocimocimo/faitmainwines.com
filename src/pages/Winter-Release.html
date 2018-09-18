@@ -1,115 +1,109 @@
 ---
 title: Winter Release
 pageHeading: Winter Release
+metaDescription: Wines by Napa Valley winemaker, Benoit Touquette.
+metaKeywords: fait main wines, fait main, benoit touquette, napa valley cabernet, napa cabernet, napa valley wine, cabernet sauvignon, chardonnay, napa red wine, napa valley chardonnay, napa valley winemaker, beckstoffer vineyard, las piedras vineyard, sleeping lady vineyard, toyon farm
 ---
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-	  <link rel="stylesheet" href="style.css?v=1.4">
-	  <meta charset="UTF-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
-	  <title>Fait-Main Wines | {{ title }}</title>
-	  <meta name="description" content="Wines by Napa Valley winemaker, Benoit Touquette.">
-	  <meta name="keywords" content="fait main wines, fait main, benoit touquette, napa valley cabernet, napa cabernet, napa valley wine, cabernet sauvignon, chardonnay, napa red wine, napa valley chardonnay, napa valley winemaker, beckstoffer vineyard, las piedras vineyard, sleeping lady vineyard, toyon farm">
-	  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-	  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-	  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-	  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-	  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-	  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-	  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-	  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-	  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-	  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-	  <link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
-	  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-	  <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-	  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-	  <link rel="manifest" href="/manifest.json">
-	  <meta name="msapplication-TileColor" content="#da532c">
-	  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-	  <meta name="theme-color" content="#ffffff">
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-	  <script src="js/cookie.js"></script>
-	  <script type="text/JavaScript">
-		 $(function() {
-			 if( $.cookie( 'loadedAlreadySr' ) != 'YES' ) {
-				 //run function here
-				 new WOW().init();
-				 $.cookie( 'loadedAlreadySr', 'YES', {expires: 1 }); //set cookie
-			 }
-		 });
-	  </script>
-	  <script src="https://use.typekit.net/eaz3mft.js"></script>
-	  <script>try{Typekit.load({ async: true });}catch(e){}</script>
-  </head>
+<head>
+  {{>head}}
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="js/cookie.js"></script>
+	<script type="text/JavaScript">
+	 $(function() {
+		 if( $.cookie( 'loadedAlreadySr' ) != 'YES' ) {
+			 //run function here
+			 new WOW().init();
+			 $.cookie( 'loadedAlreadySr', 'YES', {expires: 1 }); //set cookie
+		 }
+	 });
+	</script>
+	<script src="https://use.typekit.net/eaz3mft.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
 
-  <body>
-	  <div class="loader-container">
-		  <div class="loader">
-			  <div class="logo">
-				  <img src="img/logo.svg" alt="">
-			  </div>
-			  <span class="expand"></span>
-		  </div>
-	  </div>
-	  <div class="wrap">
-      {{>header}}
+<body>
+	<div class="loader-container">
+		<div class="loader">
+			<div class="logo">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<span class="expand"></span>
+		</div>
+	</div>
+	<div class="wrap">
+    {{>header}}
 
-		  <div class="hero hero_winter-release">
-			  <div class="covervid-wrapper desk">
-				  <video muted="muted" class="covervid-video" autoplay loop poster="img/winter-2018-first-frame.jpg">
-					  <source src="video/winter-2018-web.webm" type="video/webm">
-					  <source src="video/winter-2018-web.mp4" type="video/mp4">
-				  </video>
-			  </div>
-			  <div class="img_block mob" style="background-image: url(img/winter-2018-still-mobile.jpg);"></div>
-		  </div>
+		<div class="hero hero_winter-release">
+			<div class="covervid-wrapper desk">
+				<video muted="muted" class="covervid-video" autoplay loop poster="img/winter-2018-first-frame.jpg">
+					<source src="video/winter-2018-web.webm" type="video/webm">
+					<source src="video/winter-2018-web.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="img_block mob" style="background-image: url(img/winter-2018-still-mobile.jpg);"></div>
+		</div>
 
-		  <div class="nav_wrap">
-			  <div class="button_container" id="toggle">
-				  <img src="img/Icons-ham.svg" alt="menu icon">
-				  <span>MENU</span>
-			  </div>
-			  <div class="join"><a href="register.html">join the list</a></div>
-		  </div>
-		  <div class="container sr">
-			  <div class="text wow fadeInUp fadeInUpBig" data-wow-duration="1s">
-          <h1>{{ pageHeading }}<hr></h1>
-          <p>After a smoky end to 2017 and a bomb cyclone to welcome the new year, it is time to kick back, relax, and sip on new Fait-Main Wines from the exceptional 2015 vintage: the 2015 Beckstoffer Las Piedras Cabernet Sauvignon, 2015 Bettinelli Sleeping Lady Cabernet Sauvignon, and 2016 Penhoet Toyon Farm Chardonnay.</p>
-          <p>I know some of you may think it’s impossible to have a four-year winning streak of fantastic vintages since 2012…but in my view, 2015 will rival 2013.</p>
-			  </div>
-			  <div class="slide wow fadeInUp fadeInUpBig" data-wow-duration="1s">
-				  <div class="slide_container">
-            <div class="slide_inner main-carousel">
+		<div class="nav_wrap">
+			<div class="button_container" id="toggle">
+				<img src="img/Icons-ham.svg" alt="menu icon">
+				<span>MENU</span>
+			</div>
+			<div class="join"><a href="register.html">join the list</a></div>
+		</div>
+		<div class="container sr">
+			<div class="text wow fadeInUp fadeInUpBig" data-wow-duration="1s">
+        <h1>{{ pageHeading }}<hr></h1>
+        <p>After a smoky end to 2017 and a bomb cyclone to welcome the new year, it is time to kick back, relax, and sip on new Fait-Main Wines from the exceptional 2015 vintage: the 2015 Beckstoffer Las Piedras Cabernet Sauvignon, 2015 Bettinelli Sleeping Lady Cabernet Sauvignon, and 2016 Penhoet Toyon Farm Chardonnay.</p>
+        <p>I know some of you may think it’s impossible to have a four-year winning streak of fantastic vintages since 2012…but in my view, 2015 will rival 2013.</p>
+			</div>
+			<div class="slide wow fadeInUp fadeInUpBig" data-wow-duration="1s">
+				<div class="slide_container">
+          <div class="slide_inner main-carousel">
 
-              <img class="slide_img carousel-cell" src="img/winter-2018/1-emblem.jpg" alt="emblem">
-              <img class="slide_img carousel-cell" src="img/winter-2018/2-vine-twigs.jpg" alt="vine twigs">
-              <img class="slide_img carousel-cell" src="img/winter-2018/3-vinyard.jpg" alt="vinyard">
-              <img class="slide_img carousel-cell" src="img/winter-2018/4-bark-closeup.jpg" alt="bark closeup">
-              <img class="slide_img carousel-cell" src="img/winter-2018/5-bark-closeup-2.jpg" alt="bark closeup">
+            <img class="slide_img carousel-cell" src="img/winter-2018/1-emblem.jpg" alt="emblem">
+            <img class="slide_img carousel-cell" src="img/winter-2018/2-vine-twigs.jpg" alt="vine twigs">
+            <img class="slide_img carousel-cell" src="img/winter-2018/3-vinyard.jpg" alt="vinyard">
+            <img class="slide_img carousel-cell" src="img/winter-2018/4-bark-closeup.jpg" alt="bark closeup">
+            <img class="slide_img carousel-cell" src="img/winter-2018/5-bark-closeup-2.jpg" alt="bark closeup">
 
-				    </div>
-          </div>
-				  <div class="slide_overlay" id="closeIt"></div>
-			  </div>
-			  <div class="text wow fadeInUp fadeInUpBig" data-wow-duration="1s">
-          <p>The 2015 vintage was another challenging drought year with low precipitation during the winter. As in 2014, budbreak came early in February, followed by two great months that ended in a cold and disappointing May. This affected flowering and gave us an uneven crop set, reducing our yield by roughly 30%. The tiny berries that survived faced heat spikes in August and September and forced difficult decisions about selection and triage of the fruit (aka removing all raisins and dehydrated berries) at the winery, which further reduced the yield. But what a spectacular result.</p>
-          <p>These 2015 wines are singular, expressive of terroir, and as fleshy and tannic as the 2013s were – but with more acidity and lower pH. If you ask me, this is the sign of longevity.</p>
-          <p>Thank you for your continued <a href="register.html" class="side_icon">support of Fait-Main Wines</a>. Wishing you a prosperous and delicious new year, full of the best kind of people and wine.</p>
-				  <p>Amitiés,</p>
-				  <div class="signature">
-					  <img src="img/sig+name.svg" alt="">
 				  </div>
-			  </div>
-		  </div>
-      {{>footer}}
-	  </div>
-	  <script src="js/wow.min.js"></script>
-	  <script src="js/jquery.sticky.js"></script>
-	  <script src="js/flickity.pkgd.min.js"></script>
-	  <script src="js/covervid.min.js"></script>
-	  <script src="js/script.js"></script>
-  </body>
-</html>
+        </div>
+				<div class="slide_overlay" id="closeIt"></div>
+			</div>
+			<div class="text wow fadeInUp fadeInUpBig" data-wow-duration="1s">
+        <p>The 2015 vintage was another challenging drought year with low precipitation during the winter. As in 2014, budbreak came early in February, followed by two great months that ended in a cold and disappointing May. This affected flowering and gave us an uneven crop set, reducing our yield by roughly 30%. The tiny berries that survived faced heat spikes in August and September and forced difficult decisions about selection and triage of the fruit (aka removing all raisins and dehydrated berries) at the winery, which further reduced the yield. But what a spectacular result.</p>
+        <p>These 2015 wines are singular, expressive of terroir, and as fleshy and tannic as the 2013s were – but with more acidity and lower pH. If you ask me, this is the sign of longevity.</p>
+        <p>Thank you for your continued <a href="register.html" class="side_icon">support of Fait-Main Wines</a>. Wishing you a prosperous and delicious new year, full of the best kind of people and wine.</p>
+				<p>Amitiés,</p>
+				<div class="signature">
+					<img src="img/sig+name.svg" alt="">
+				</div>
+			</div>
+		</div>
+    {{>footer}}
+	</div>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/flickity.pkgd.min.js"></script>
+	<script src="js/covervid.min.js"></script>
+	<script src="js/script.js"></script>
+</body>

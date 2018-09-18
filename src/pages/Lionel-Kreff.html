@@ -1,84 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<link rel="stylesheet" href="style.css?v=1.4">
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
-		<title>Fait-Main Wines | Lionel Kreff</title>
-		<meta name="description" content="Wines by Napa Valley winemaker, Lionel Kreff.">
-		<meta name="keywords" content="fait main wines, fait main, lionel kreff, napa valley cabernet, napa cabernet, napa valley wine, cabernet sauvignon, chardonnay, napa red wine, napa valley chardonnay, napa valley winemaker, beckstoffer vineyard, las piedras vineyard, sleeping lady vineyard, toyon farm">
-		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
-		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-		<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-		<link rel="manifest" href="/manifest.json">
-		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-		<meta name="theme-color" content="#ffffff">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-		<script src="js/cookie.js"></script>
-		<script type="text/JavaScript">
-		 $(function() {
-			 if( $.cookie( 'loadedAlreadySm' ) != 'YES' ) {
-				 //run function here
-				 new WOW().init();
-				 $.cookie( 'loadedAlreadySm', 'YES', {expires: 1 }); //set cookie
-			 }
-		 });
-		</script>
-		<script src="https://use.typekit.net/eaz3mft.js"></script>
-		<script>try{Typekit.load({ async: true });}catch(e){}</script>
-	</head>
+---
+title: Lionel Kreff
+metaDescription: Wines by Napa Valley winemaker, Lionel Kreff.
+metaKeywords: fait main wines, fait main, lionel kreff, napa valley cabernet, napa cabernet, napa valley wine, cabernet sauvignon, chardonnay, napa red wine, napa valley chardonnay, napa valley winemaker, beckstoffer vineyard, las piedras vineyard, sleeping lady vineyard, toyon farm
+---
+<head>
+  {{>head}}
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="js/cookie.js"></script>
+	<script type="text/JavaScript">
+	 $(function() {
+		 if( $.cookie( 'loadedAlreadySm' ) != 'YES' ) {
+			 //run function here
+			 new WOW().init();
+			 $.cookie( 'loadedAlreadySm', 'YES', {expires: 1 }); //set cookie
+		 }
+	 });
+	</script>
+	<script src="https://use.typekit.net/eaz3mft.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
 
-	<body>
-		<div class="loader-container">
-			<div class="loader">
-				<div class="logo">
-					<img src="img/logo.svg" alt="">
-				</div>
-				<span class="expand"></span>
+<body>
+	<div class="loader-container">
+		<div class="loader">
+			<div class="logo">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<span class="expand"></span>
+		</div>
+	</div>
+	<div class="wrap">
+    {{>header}}
+		<div class="hero">
+			<div class="img_block img_block_lk">
+      </div>
+		</div>
+		<div class="nav_wrap">
+			<div class="button_container" id="toggle">
+				<img src="img/Icons-ham.svg" alt="menu icon">
+				<span>MENU</span>
+			</div>
+			<div class="join"><a href="register.html">join the list</a></div>
+		</div>
+		<div class="container person">
+			<div class="text wow fadeInUp fadeInUpBig" data-wow-duration="1s">
+				<h1>Lionel Kreff<hr></h1>
+        <p>Benoit and I met in 2004, and connected instantly. We share the same energy and joie de vivre, but also an insatiable drive to learn, question, improve, and achieve the absolute best.</p>
+        <p>I grew up near Toulouse in southwestern France, in a family of entrepreneurs—fruit farmers, bakers, and diamond cutters who taught me the value of precision, tradition and a pioneering spirit in pursuit of one’s own passion. When I discovered winemaking was my vocation, I earned degrees in viticulture and oenology and made wine for several years in southwestern France and India. In 2001, I became a partner in an historic family cooperage and discovered the wider world of winemaking, traveling to diverse wine growing regions and experiencing a broader cross section of wines and people. That work led me to Benoit... my friend, my collaborator, and godfather to my son Auguste.</p>
 			</div>
 		</div>
-		<div class="wrap">
-      {{>header}}
-			<div class="hero">
-				<div class="img_block img_block_lk">
-        </div>
-			</div>
-			<div class="nav_wrap">
-				<div class="button_container" id="toggle">
-					<img src="img/Icons-ham.svg" alt="menu icon">
-					<span>MENU</span>
-				</div>
-				<div class="join"><a href="register.html">join the list</a></div>
-			</div>
-			<div class="container person">
-				<div class="text wow fadeInUp fadeInUpBig" data-wow-duration="1s">
-					<h1>Lionel Kreff<hr></h1>
-          <p>Benoit and I met in 2004, and connected instantly. We share the same energy and joie de vivre, but also an insatiable drive to learn, question, improve, and achieve the absolute best.</p>
-          <p>I grew up near Toulouse in southwestern France, in a family of entrepreneurs—fruit farmers, bakers, and diamond cutters who taught me the value of precision, tradition and a pioneering spirit in pursuit of one’s own passion. When I discovered winemaking was my vocation, I earned degrees in viticulture and oenology and made wine for several years in southwestern France and India. In 2001, I became a partner in an historic family cooperage and discovered the wider world of winemaking, traveling to diverse wine growing regions and experiencing a broader cross section of wines and people. That work led me to Benoit... my friend, my collaborator, and godfather to my son Auguste.</p>
-				</div>
-			</div>
-			<div class="emblem p_emb">
-				<img src="img/emblem.svg" alt="emblem">
-			</div>
-      {{>footer}}
+		<div class="emblem p_emb">
+			<img src="img/emblem.svg" alt="emblem">
 		</div>
-		<script src="js/wow.min.js"></script>
-		<script src="js/jquery.sticky.js"></script>
-		<script src="js/flickity.pkgd.min.js"></script>
-		<script src="js/covervid.min.js"></script>
-		<script src="js/script.js"></script>
-	</body>
-</html>
+    {{>footer}}
+	</div>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/flickity.pkgd.min.js"></script>
+	<script src="js/covervid.min.js"></script>
+	<script src="js/script.js"></script>
+</body>

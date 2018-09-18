@@ -1,154 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-	  <link rel="stylesheet" href="style.css?v=1.4">
-	  <meta charset="UTF-8">
-	  <title>Fait-Main Wines</title>
-	  <meta name="description" content="Wines by Napa Valley winemaker, Benoit Touquette.">
-	  <meta name="keywords" content="fait main wines, fait main, benoit touquette, napa valley cabernet, napa cabernet, napa valley wine, cabernet sauvignon, chardonnay, napa red wine, napa valley chardonnay, napa valley winemaker, beckstoffer vineyard, las piedras vineyard, sleeping lady vineyard, toyon farm">
-	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-	  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-	  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-	  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-	  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-	  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-	  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-	  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-	  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-	  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-	  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-	  <link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
-	  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-	  <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-	  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-	  <link rel="manifest" href="/manifest.json">
-	  <meta name="msapplication-TileColor" content="#da532c">
-	  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-	  <meta name="theme-color" content="#ffffff">
-	  <!--320-->
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-	  <script src="js/cookie.js"></script>
-	  <script type="text/JavaScript">
-		 $(function() {
-			 if( $.cookie( 'loadedAlreadyHm' ) != 'YES' ) {
-				 // run function here
-         // $("#wowy").removeClass("wow");
-				 new WOW().init();
-				 $.cookie( 'loadedAlreadyHm', 'YES', {expires: 1 }); //set cookie
-			 }
-		 });
-	  </script>
-	  <script src="https://use.typekit.net/eaz3mft.js"></script>
-	  <script>try{Typekit.load({ async: true });}catch(e){}</script>
-  </head>
-  <body>
-	  <div class="loader-container">
-		  <div class="loader">
-			  <div class="logo">
-				  <img src="img/logo.svg" alt="">
-			  </div>
-			  <span class="expand"></span>
-		  </div>
-	  </div>
-	  <div class="wrap">
-      {{>header}}
-		  <div class="hero hero_hm">
-			  <div class="covervid-wrapper desk">
-				  <video muted="muted" class="covervid-video" autoplay loop poster="img/homepage_bg.jpg">
-					  <source src="video/FaitMain-web.webm" type="video/webm">
-					  <source src="video/FaitMain-web.mp4" type="video/mp4">
-				  </video>
-			  </div>
-			  <div class="img_block mob"></div>
-			  <div class="hero_logo">
-				  <img src="img/logo-white.svg" alt="fait wine logo">
-			  </div>
-        <!--			<a href="#" id="" class="btn video play">PLAY</a>-->
-		  </div>
-		  <div class="nav_wrap">
-			  <div class="button_container" id="toggle">
-				  <img src="img/Icons-ham.svg" alt="menu icon">
-				  <span>MENU</span>
-			  </div>
-			  <div class="join"><a href="register.html">join the list</a></div>
-		  </div>
+---
+metaDescription: Wines by Napa Valley winemaker, Benoit Touquette.
+metaKeywords: fait main wines, fait main, benoit touquette, napa valley cabernet, napa cabernet, napa valley wine, cabernet sauvignon, chardonnay, napa red wine, napa valley chardonnay, napa valley winemaker, beckstoffer vineyard, las piedras vineyard, sleeping lady vineyard, toyon farm
+---
+<head>
+  {{>head}}
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!--320-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="js/cookie.js"></script>
+	<script type="text/JavaScript">
+	 $(function() {
+		 if( $.cookie( 'loadedAlreadyHm' ) != 'YES' ) {
+			 // run function here
+       // $("#wowy").removeClass("wow");
+			 new WOW().init();
+			 $.cookie( 'loadedAlreadyHm', 'YES', {expires: 1 }); //set cookie
+		 }
+	 });
+	</script>
+	<script src="https://use.typekit.net/eaz3mft.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
+	<div class="loader-container">
+		<div class="loader">
+			<div class="logo">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<span class="expand"></span>
+		</div>
+	</div>
+	<div class="wrap">
+    {{>header}}
+		<div class="hero hero_hm">
+			<div class="covervid-wrapper desk">
+				<video muted="muted" class="covervid-video" autoplay loop poster="img/homepage_bg.jpg">
+					<source src="video/FaitMain-web.webm" type="video/webm">
+					<source src="video/FaitMain-web.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="img_block mob"></div>
+			<div class="hero_logo">
+				<img src="img/logo-white.svg" alt="fait wine logo">
+			</div>
+      <!--			<a href="#" id="" class="btn video play">PLAY</a>-->
+		</div>
+		<div class="nav_wrap">
+			<div class="button_container" id="toggle">
+				<img src="img/Icons-ham.svg" alt="menu icon">
+				<span>MENU</span>
+			</div>
+			<div class="join"><a href="register.html">join the list</a></div>
+		</div>
 
-		  <div class="container">
-			  <div id="wowy" class="welcome_text wow fadeInUpBig" data-wow-offset="100" data-wow-duration="1s">
-				  <div class="emblem">
-					  <img src="img/emblem.svg" alt="emblem">
-				  </div>
-				  <p>
-					  I don’t want anything handed to me, I want to take it. It’s only when you push yourself to the edge that you find out what you are truly capable of.
-				  </p>
-				  <div class="sig">
-					  <img src="img/sig+name.svg" alt="signature">
-				  </div>
-			  </div>
-			  <div class="winter">
-				  <div id="wowy" class="wow fadeInUp fadeInUpBig" data-wow-duration="1s">
-					  <a class="" href="Winter-Release.html">
-						  <img src="img/winter-2018-still-desktop.jpg" alt="flower">
-						  <h2>Winter Release<hr></h2>
-					  </a>
-				  </div>
-			  </div>
-			  <div class="grid-item people soon">
-				  <a id="wowy" class="wow fadeInUpBig" data-wow-duration="1s" href="Todeschini-Asteria.html">
-					  <img src="img/Todeschini-Home.jpg" alt="cathedral wall">
-					  <h2>Todeschini Asteria Vineyard<hr></h2>
-				  </a>
-			  </div>
-			  <div class="img_contaner grid">
+		<div class="container">
+			<div id="wowy" class="welcome_text wow fadeInUpBig" data-wow-offset="100" data-wow-duration="1s">
+				<div class="emblem">
+					<img src="img/emblem.svg" alt="emblem">
+				</div>
+				<p>
+					I don’t want anything handed to me, I want to take it. It’s only when you push yourself to the edge that you find out what you are truly capable of.
+				</p>
+				<div class="sig">
+					<img src="img/sig+name.svg" alt="signature">
+				</div>
+			</div>
+			<div class="winter">
+				<div id="wowy" class="wow fadeInUp fadeInUpBig" data-wow-duration="1s">
+					<a class="" href="Winter-Release.html">
+						<img src="img/winter-2018-still-desktop.jpg" alt="flower">
+						<h2>Winter Release<hr></h2>
+					</a>
+				</div>
+			</div>
+			<div class="grid-item people soon">
+				<a id="wowy" class="wow fadeInUpBig" data-wow-duration="1s" href="Todeschini-Asteria.html">
+					<img src="img/Todeschini-Home.jpg" alt="cathedral wall">
+					<h2>Todeschini Asteria Vineyard<hr></h2>
+				</a>
+			</div>
+			<div class="img_contaner grid">
 
-				  <div class="grid-item les">
-					  <a id="wowy" class="wow fadeInUpBig" data-wow-duration="1s" href="Las-Piedras.html">
-						  <img src="img/LasPiedras.jpg" alt="rocks">
-						  <h2>Beckstoffer Las Piedras Vineyard<hr></h2>
-					  </a>
-				  </div>
-				  <div class="grid-item toyon push_b">
-					  <a id="wowy" class="wow fadeInUpBig" data-wow-duration="1s" href="Toyon-Farm.html">
-						  <img src="img/ToyonFarm.jpg" alt="horse">
-						  <h2>Penhoet Toyon Farm<hr></h2>
-					  </a>
-				  </div>
-				  <div class="grid-item sleeping">
-					  <a id="wowy" class="wow fadeInUpBig" data-wow-duration="1s" href="Sleeping-Lady.html">
-						  <img src="img/SleepingLady.jpg" alt="farm">
-						  <h2>Bettinelli Sleeping Lady Vineyard<hr></h2>
-					  </a>
-				  </div>
-			  </div>
-			  <div class="grid-item people">
-				  <a id="wowy" class="wow fadeInUpBig" data-wow-duration="1s" href="People.html">
-					  <img src="img/People.jpg" alt="man smelling wine">
-					  <h2>People<hr></h2>
-				  </a>
-			  </div>
-			  <div id="wowy" class="text wow fadeInUpBig" data-wow-offset="100" data-wow-duration="1s">
-				  <div class="emblem">
-					  <img src="img/emblem.svg" alt="emblem">
-				  </div>
-				  <p>
-					  When something clicks—the right vineyard site, the right people, the right timing—I go for it, no matter how risky it might appear, or how many more sleepless nights at the winery there will be. For some, winemaking is about a lifestyle, but for me it’s about hard work. Work fuels me. At home, I can’t rest for long without my mind wandering back to the winery, the vineyards, the unexplored possibilities. Fait-Main is the result of that restlessness. Together, <a href="register.html" class="side_icon">these wines tell the story</a> of the vineyards that speak to me and the people who share my commitment to the highest standards in any endeavor. An endless series of seemingly small decisions— how much to irrigate, when to prune, how to react to a heat spell, what day to harvest, a percentage point here or there in a blend— can add up to much more than the sum of its parts and separate the good from the great. It’s that dedication to precision in every detail that I believe allows me to make wines that reflect my vision and sensibility in that moment in time.
-				  </p>
-			  </div>
-		  </div>
-      {{>footer}}
-	  </div>
-	  <script src="js/wow.min.js"></script>
-	  <script src="js/jquery.sticky.js"></script>
-	  <script src="js/imagesloaded.pkgd.min.js"></script>
-	  <script src="js/masonry.pkgd.min.js"></script>
-	  <script src="js/covervid.min.js"></script>
-	  <script src="js/script.js"></script>
-	  <script>
-		 $('.grid').masonry({
-			 // options
-			 itemSelector: '.grid-item',
-		 });
-	  </script>
-  </body>
-</html>
+				<div class="grid-item les">
+					<a id="wowy" class="wow fadeInUpBig" data-wow-duration="1s" href="Las-Piedras.html">
+						<img src="img/LasPiedras.jpg" alt="rocks">
+						<h2>Beckstoffer Las Piedras Vineyard<hr></h2>
+					</a>
+				</div>
+				<div class="grid-item toyon push_b">
+					<a id="wowy" class="wow fadeInUpBig" data-wow-duration="1s" href="Toyon-Farm.html">
+						<img src="img/ToyonFarm.jpg" alt="horse">
+						<h2>Penhoet Toyon Farm<hr></h2>
+					</a>
+				</div>
+				<div class="grid-item sleeping">
+					<a id="wowy" class="wow fadeInUpBig" data-wow-duration="1s" href="Sleeping-Lady.html">
+						<img src="img/SleepingLady.jpg" alt="farm">
+						<h2>Bettinelli Sleeping Lady Vineyard<hr></h2>
+					</a>
+				</div>
+			</div>
+			<div class="grid-item people">
+				<a id="wowy" class="wow fadeInUpBig" data-wow-duration="1s" href="People.html">
+					<img src="img/People.jpg" alt="man smelling wine">
+					<h2>People<hr></h2>
+				</a>
+			</div>
+			<div id="wowy" class="text wow fadeInUpBig" data-wow-offset="100" data-wow-duration="1s">
+				<div class="emblem">
+					<img src="img/emblem.svg" alt="emblem">
+				</div>
+				<p>
+					When something clicks—the right vineyard site, the right people, the right timing—I go for it, no matter how risky it might appear, or how many more sleepless nights at the winery there will be. For some, winemaking is about a lifestyle, but for me it’s about hard work. Work fuels me. At home, I can’t rest for long without my mind wandering back to the winery, the vineyards, the unexplored possibilities. Fait-Main is the result of that restlessness. Together, <a href="register.html" class="side_icon">these wines tell the story</a> of the vineyards that speak to me and the people who share my commitment to the highest standards in any endeavor. An endless series of seemingly small decisions— how much to irrigate, when to prune, how to react to a heat spell, what day to harvest, a percentage point here or there in a blend— can add up to much more than the sum of its parts and separate the good from the great. It’s that dedication to precision in every detail that I believe allows me to make wines that reflect my vision and sensibility in that moment in time.
+				</p>
+			</div>
+		</div>
+    {{>footer}}
+	</div>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/covervid.min.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+	 $('.grid').masonry({
+		 // options
+		 itemSelector: '.grid-item',
+	 });
+	</script>
+</body>
