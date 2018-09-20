@@ -2,3 +2,4 @@
 
 bin/compile-less
 bin/compile-html
+node_modules/.bin/webpack --mode=production

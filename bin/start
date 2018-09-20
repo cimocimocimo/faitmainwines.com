@@ -11,10 +11,14 @@ nodemon --watch src/pages \
         --watch src/layouts \
         --watch src/partials \
         --watch src/data \
-        --ext html,hbs \
+        --ext html,hbs,json,yaml \
         --exec '/bin/sh' bin/compile-html &
+
+nodemon --watch src/scripts \
+        --ext js \
+        --exec node_modules/.bin/webpack --mode=development &
 
 browser-sync start \
              --server 'dist' \
-             --files 'dist/*' \
+             --files 'dist/**' \
              --reload-debounce 200

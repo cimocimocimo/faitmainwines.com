@@ -6,3 +6,4 @@ dist/*.html
 tmp/*
 !tmp/.gitkeep
 dist/style.css
+dist/scripts
