@@ -1,0 +1,83 @@
+---
+title: Fall Release
+pageHeading: Fall Release
+metaDescription: Wines by Napa Valley winemaker, Benoit Touquette.
+metaKeywords: fait main wines, fait main, benoit touquette, napa valley cabernet, napa cabernet, napa valley wine, cabernet sauvignon, chardonnay, napa red wine, napa valley chardonnay, napa valley winemaker, beckstoffer vineyard, las piedras vineyard, sleeping lady vineyard, toyon farm
+---
+<head>
+  {{>head}}
+	<script type="text/JavaScript">
+	 $(function() {
+		 if( $.cookie( 'loadedAlreadySr' ) != 'YES' ) {
+			 //run function here
+			 new WOW().init();
+			 $.cookie( 'loadedAlreadySr', 'YES', {expires: 1 }); //set cookie
+		 }
+	 });
+	</script>
+</head>
+
+<body>
+	<div class="loader-container">
+		<div class="loader">
+			<div class="logo">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<span class="expand"></span>
+		</div>
+	</div>
+	<div class="wrap">
+    {{>header}}
+		<div class="hero hero_winter-release">
+			<div class="covervid-wrapper desk">
+				<video muted="muted" class="covervid-video" autoplay loop poster="img/winter-2018-first-frame.jpg">
+					<source src="video/winter-2018-web.webm" type="video/webm">
+					<source src="video/winter-2018-web.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="img_block mob" style="background-image: url(img/winter-2018-still-mobile.jpg);"></div>
+		</div>
+
+		<div class="nav_wrap">
+			<div class="button_container" id="toggle">
+				<img src="img/Icons-ham.svg" alt="menu icon">
+				<span>MENU</span>
+			</div>
+			<div class="join"><a href="register.html">join the list</a></div>
+		</div>
+		<div class="container sr">
+			<div class="text wow fadeInUp fadeInUpBig" data-wow-duration="1s">
+        <h1>{{ pageHeading }}<hr></h1>
+        <p>In Napa Valley, I think and speak in English – in Bordeaux, French. Fait-Main’s latest release from the ancient limestone plateau of St. Emilion shows off the same diversity of expression between new and old terroirs. Perched almost 90 meters above sea level on timeworn layers of calcareous rock, the Grand Cru Todeschini Asteria Vineyard exudes minerality, tension, and freshness. It demands a different way of thinking… new and old at the same time.</p>
+			</div>
+			<div class="slide wow fadeInUp fadeInUpBig" data-wow-duration="1s">
+				<div class="slide_container">
+          <div class="slide_inner main-carousel">
+
+            <img class="slide_img carousel-cell" src="img/winter-2018/1-emblem.jpg" alt="emblem">
+            <img class="slide_img carousel-cell" src="img/winter-2018/2-vine-twigs.jpg" alt="vine twigs">
+            <img class="slide_img carousel-cell" src="img/winter-2018/3-vinyard.jpg" alt="vinyard">
+            <img class="slide_img carousel-cell" src="img/winter-2018/4-bark-closeup.jpg" alt="bark closeup">
+            <img class="slide_img carousel-cell" src="img/winter-2018/5-bark-closeup-2.jpg" alt="bark closeup">
+
+				  </div>
+        </div>
+				<div class="slide_overlay" id="closeIt"></div>
+			</div>
+			<div class="text wow fadeInUp fadeInUpBig" data-wow-duration="1s">
+        <p>The 2016 vintage on Bordeaux’s Right Bank was sublime. Ideal ripening conditions for Merlot allowed us to create a wine with inky intensity, crushed velvet textures, and a plush ripeness that rides the line between decadence and refinement. The bouquet blends multiple layers of red and blue fruit complemented by chalk minerality which provides the wine it's elegance and amazing length on the palate. This is Grand Cru St. Emilion at its best, and I am thrilled to offer it to you.</p>
+        <p>Thank you for your continued support of Fait-Main Wines. Please devour <a href="register.html" class="side_icon">this landmark wine</a>… but don’t forget to cellar some for later.</p>
+				<p>Amitiés,</p>
+				<div class="signature">
+					<img src="img/sig+name.svg" alt="">
+				</div>
+			</div>
+		</div>
+    {{>footer}}
+	</div>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/flickity.pkgd.min.js"></script>
+	<script src="js/covervid.min.js"></script>
+	<script src="scripts/{{manifest.main_js}}"></script>
+</body>
