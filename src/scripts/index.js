@@ -70,8 +70,6 @@ function carouselInit () {
         y2: 35,
         x3: 60
       },
-      autoPlay: 7000,
-      pauseAutoPlayOnHover: false,
       friction: 0.4
     })
   }
