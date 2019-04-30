@@ -27,9 +27,19 @@
     width: 100%;
   }
 
+  // for shifting an item over the centre line if needed.
+  &__inner {
+    position: relative;
+  }
+
+  img,
+  h2,
+  hr {
+    .transition(0.2s);
+  }
+
   img{
     .opacity(40%);
-    .transition(0.2s);
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
   }
@@ -38,7 +48,7 @@
     color: @grey_link;
     text-align: center;
     width: 100%;
-    margin: 25px auto;
+    margin: 25px auto 0;
   }
 
   hr {
@@ -53,6 +63,7 @@
     height: 100%;
     text-decoration: none;
     display: block;
+    position: relative;
 
     &:hover{
       img{
@@ -103,32 +114,33 @@
   }
 
   &__people {
-    padding: 0 32.5%;
+    padding: 0 32.5% 12%;
   }
 
   // on People.html
 
   &__benoit {
-    padding: 0 0 0 4%;
-    left: 23px !important;
+    padding: 4% 0 6% 16%;
+
+    > .grid-item__inner {
+      right: -5%;
+    }
   }
 
   &__shauna {
-    margin-top: 270px;
-    padding: 0% 6% 0 10%;
+    padding: 20% 16% 0 8%;
   }
 
   &__lionel {
-    margin-top: 10px;
-    padding: 0 0 3% 6%;
-    margin-bottom: 0;
+    padding: 0 0 5% 16%;
   }
 
   &__austin {
-    width: 52%;
-    margin: auto;
-    margin-bottom: 70px;
-    float: none;
+    padding: 0 32% 6%;
+  }
+
+  &__connor-rebecca {
+    padding: 0 28% 4%;
   }
 }
 
