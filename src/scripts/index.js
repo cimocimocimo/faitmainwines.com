@@ -1,19 +1,19 @@
 import $ from 'jquery'
+import WOW from 'WOW'
 
 var $win = $(window)
-var $doc = $(document)
 
 // required to call before document ready event
-!function () {
+;(function () {
   var $video = $('.covervid-video')
   if ($video.length) {
     $video.coverVid(1920, 1080)
   }
-}()
+}())
 
 // Helpers
 function getPageFilename () {
-  return window.location.pathname.split("/").pop();
+  return window.location.pathname.split('/').pop()
 }
 
 // Init functions
@@ -78,7 +78,7 @@ function carouselInit () {
 }
 
 function wowInit () {
-  new WOW().init();
+  new WOW().init()
 }
 
 /*
@@ -88,14 +88,13 @@ function wowInit () {
 function runOncePerPagePerDay (runList) {
   var cookieName = getPageFilename() + '-loadedAlready'
 
-  if( $.cookie( cookieName ) != 'YES' ) {
-
+  if ($.cookie(cookieName) !== 'YES') {
     for (var i = 0; i < runList.length; i++) {
       runList[i]()
     }
 
-	  $.cookie( cookieName, 'YES', {expires: 1 })
-	}
+    $.cookie(cookieName, 'YES', { expires: 1 })
+  }
 }
 
 // On DOM ready

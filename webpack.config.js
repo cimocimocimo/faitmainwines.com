@@ -4,7 +4,8 @@ const ManifestPlugin = require('webpack-manifest-plugin')
 module.exports = {
   entry: path.resolve(__dirname, 'src/scripts/index.js'),
   externals: {
-    jquery: 'jQuery'
+    jquery: 'jQuery',
+    WOW: 'WOW'
   },
   "module": {
     "rules": [
