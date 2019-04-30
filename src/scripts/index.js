@@ -3,17 +3,20 @@ import $ from 'jquery'
 var $win = $(window)
 var $doc = $(document)
 
-function heroVideoInit () {
+// required to call before document ready event
+!function () {
   var $video = $('.covervid-video')
-
   if ($video.length) {
     $video.coverVid(1920, 1080)
   }
+}()
+
+// Helpers
+function getPageFilename () {
+  return window.location.pathname.split("/").pop();
 }
 
-// required to call before document ready event
-heroVideoInit()
-
+// Init functions
 function fullscreen () {
   var winX = $win.width()
   var winY = $win.height()
@@ -74,12 +77,29 @@ function carouselInit () {
   }
 }
 
-$win.load(function () {
-  $('.loader').delay(300).fadeOut('slow')
-  $('.loader-container').delay(400).fadeOut()
-})
+function wowInit () {
+  new WOW().init();
+}
 
-$doc.ready(function () {
+/*
+ * Only runs the array of functions if they have not been run in the past
+ * 24 hours on the currently loaded page.
+ */
+function runOncePerPagePerDay (runList) {
+  var cookieName = getPageFilename() + '-loadedAlready'
+
+  if( $.cookie( cookieName ) != 'YES' ) {
+
+    for (var i = 0; i < runList.length; i++) {
+      runList[i]()
+    }
+
+	  $.cookie( cookieName, 'YES', {expires: 1 })
+	}
+}
+
+// On DOM ready
+$(function () {
   // open the overlay menu
   $('#toggle').click(function () {
     $(this).toggleClass('active')
@@ -129,4 +149,11 @@ $doc.ready(function () {
   masonryInit()
   heroFullscreenInit()
   carouselInit()
+  runOncePerPagePerDay([wowInit])
+})
+
+// On all resources loaded (images, iframes, etc.)
+$win.load(function () {
+  $('.loader').delay(300).fadeOut('slow')
+  $('.loader-container').delay(400).fadeOut()
 })

@@ -10,15 +10,6 @@ numbProduced: 200
 ---
 <head>
   {{>head}}
-	<script type="text/JavaScript">
-	 $(function() {
-		 if( $.cookie( 'loadedAlreadyLp' ) != 'YES' ) {
-			 //run function here
-			 new WOW().init();
-			 $.cookie( 'loadedAlreadyLp', 'YES', {expires: 1 }); //set cookie
-		 }
-	 });
-	</script>
 </head>
 
 <body>

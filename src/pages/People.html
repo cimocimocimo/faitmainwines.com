@@ -5,15 +5,6 @@ metaKeywords: fait main wines, fait main, benoit touquette, napa valley cabernet
 ---
 <head>
   {{>head}}
-	<script type="text/JavaScript">
-	 $(function() {
-		 if( $.cookie( 'loadedAlreadyPp' ) != 'YES' ) {
-			 //run function here
-			 new WOW().init();
-			 $.cookie( 'loadedAlreadyPp', 'YES', {expires: 1 }); //set cookie
-		 }
-	 });
-	</script>
 </head>
 
 <body>
@@ -42,33 +33,39 @@ metaKeywords: fait main wines, fait main, benoit touquette, napa valley cabernet
 			</div>
 			<div class="join"><a href="register.html">join the list</a></div>
 		</div>
+
 		<div class="container">
-			<div class="img_contaner grid">
-				<div class="grid-item benoit">
+			<div class="grid">
+
+				<div class="grid-item grid-item__benoit">
 					<a class="wow fadeInUp fadeInUpBig" data-wow-duration="1s" href="Benoit-Touquette.html">
 						<img src="img/benoit.jpg" alt="Benoit Touquette">
 						<h2>Benoit Touquette<hr></h2>
 					</a>
 				</div>
-				<div class="grid-item push_b shauna">
+
+				<div class="grid-item grid-item__shauna">
 					<a class="wow fadeInUpBig" data-wow-duration="1s" href="Shauna-Mackenzie.html">
 						<img src="img/B_Shauna_2983-portrait.jpg" alt="Shauna Mackenzie">
 						<h2>Shauna Mackenzie<hr></h2>
 					</a>
 				</div>
-				<div class="grid-item lionel">
+
+				<div class="grid-item grid-item__lionel">
 					<a class="wow fadeInUp fadeInUpBig" data-wow-duration="1s" href="Lionel-Kreff.html">
 						<img src="img/Lionel.jpeg" alt="Lionel Kreff">
 						<h2>Lionel Kreff<hr></h2>
 					</a>
 				</div>
 			</div>
-      <div class="grid-item austin">
+
+      <div class="grid-item grid-item__austin">
 				<a class="wow fadeInUp fadeInUpBig" data-wow-duration="1s" href="Austin-Johnson.html">
 					<img src="img/B_Austin_2954-squarish.jpg" alt="Austin Johnson">
 					<h2>Austin Johnson<hr></h2>
 				</a>
 			</div>
+
 			<div class="emblem p_emb">
 				<img src="img/emblem.svg" alt="emblem">
 			</div>
@@ -80,11 +77,4 @@ metaKeywords: fait main wines, fait main, benoit touquette, napa valley cabernet
 	<script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script src="scripts/{{manifest.main_js}}"></script>
-	<script src="js/jquery.vide.min.js"></script>
-	<script>
-	 $('.grid').masonry({
-		 // options
-		 itemSelector: '.grid-item',
-	 });
-	</script>
 </body>
