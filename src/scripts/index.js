@@ -29,6 +29,20 @@ function fullscreen () {
   })
 }
 
+function masonryInit () {
+  var $container = $('.grid')
+
+  if ($container.length) {
+    $container.imagesLoaded().progress(function () {
+      $container.masonry({
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+      })
+    })
+  }
+}
+
 function heroFullscreenInit () {
   fullscreen()
 
@@ -112,16 +126,7 @@ $doc.ready(function () {
     $('.slide_inner').removeClass('open')
   })
 
-  var $container = $('.grid')
-
-  if ($container.length) {
-    $container.imagesLoaded(function () {
-      $container.masonry({
-        itemSelector: '.grid-item'
-      })
-    })
-  }
-
+  masonryInit()
   heroFullscreenInit()
   carouselInit()
 })

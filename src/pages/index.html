@@ -60,48 +60,66 @@ metaKeywords: fait main wines, fait main, benoit touquette, napa valley cabernet
 					<img src="img/sig+name.svg" alt="signature">
 				</div>
 			</div>
-			<div class="winter">
-				<div id="wowy" class="wow fadeInUp fadeInUpBig" data-wow-duration="1s">
-					<a href="Winter-Release.html">
-						<img src="img/winter-2018-still-desktop.jpg" alt="flower">
-						<h2>Winter Release<hr></h2>
-					</a>
-				</div>
-			</div>
-			<div class="grid-item people soon">
-				<a id="wowy" class="wow fadeInUpBig" data-wow-duration="1s" href="Todeschini-Asteria.html">
-					<img src="img/Todeschini-Home.jpg" alt="cathedral wall">
-					<h2>Todeschini Asteria Vineyard<hr></h2>
-				</a>
-			</div>
-			<div class="img_contaner grid">
 
-				<div class="grid-item les">
-					<a id="wowy" class="wow fadeInUpBig" data-wow-duration="1s" href="Las-Piedras.html">
+			<div class="grid">
+        <div class="grid-sizer"></div>
+
+			  <div class="grid-item grid-item--full-width grid-item__winter">
+				  <div class="wow fadeInUp fadeInUpBig" data-wow-duration="1s">
+					  <a href="Winter-Release.html">
+						  <img src="img/winter-2018-still-desktop.jpg" alt="flower">
+						  <h2>Winter Release<hr></h2>
+					  </a>
+				  </div>
+			  </div>
+
+			  <div class="grid-item grid-item__fulldraw">
+				  <a class="wow fadeInUpBig" data-wow-duration="1s" href="McMahon-Fulldraw-Vineyard.html">
+					  <img src="img/FullDrawVineyard-fullsize.jpg" alt="cathedral wall">
+					  <h2>McMahon Fulldraw Vineyard<hr></h2>
+				  </a>
+			  </div>
+
+			  <div class="grid-item grid-item__todeschini">
+				  <a class="wow fadeInUpBig" data-wow-duration="1s" href="Todeschini-Asteria.html">
+					  <img src="img/Todeschini-Home.jpg" alt="cathedral wall">
+					  <h2>Todeschini Asteria Vineyard<hr></h2>
+				  </a>
+			  </div>
+
+        <div class="grid-item grid-item--full-width clearfix"></div>
+
+				<div class="grid-item grid-item__las-piedras">
+					<a class="wow fadeInUpBig" data-wow-duration="1s" href="Las-Piedras.html">
 						<img src="img/LasPiedras.jpg" alt="rocks">
 						<h2>Beckstoffer Las Piedras Vineyard<hr></h2>
 					</a>
 				</div>
-				<div class="grid-item toyon push_b">
-					<a id="wowy" class="wow fadeInUpBig" data-wow-duration="1s" href="Toyon-Farm.html">
-						<img src="img/ToyonFarm.jpg" alt="horse">
-						<h2>Penhoet Toyon Farm<hr></h2>
-					</a>
-				</div>
-				<div class="grid-item sleeping">
-					<a id="wowy" class="wow fadeInUpBig" data-wow-duration="1s" href="Sleeping-Lady.html">
+
+        <!-- <div class="grid-item grid-item__toyon">
+					   <a class="wow fadeInUpBig" data-wow-duration="1s" href="Toyon-Farm.html">
+						 <img src="img/ToyonFarm.jpg" alt="horse">
+						 <h2>Penhoet Toyon Farm<hr></h2>
+					   </a>
+				     </div> -->
+
+				<div class="grid-item grid-item__sleeping">
+					<a class="wow fadeInUpBig" data-wow-duration="1s" href="Sleeping-Lady.html">
 						<img src="img/SleepingLady.jpg" alt="farm">
 						<h2>Bettinelli Sleeping Lady Vineyard<hr></h2>
 					</a>
 				</div>
+
+			  <div class="grid-item grid-item--full-width grid-item__people">
+				  <a class="wow fadeInUpBig" data-wow-duration="1s" href="People.html">
+					  <img src="img/People.jpg" alt="man smelling wine">
+					  <h2>People<hr></h2>
+				  </a>
+			  </div>
+
 			</div>
-			<div class="grid-item people">
-				<a id="wowy" class="wow fadeInUpBig" data-wow-duration="1s" href="People.html">
-					<img src="img/People.jpg" alt="man smelling wine">
-					<h2>People<hr></h2>
-				</a>
-			</div>
-			<div id="wowy" class="text wow fadeInUpBig" data-wow-offset="100" data-wow-duration="1s">
+
+			<div class="text wow fadeInUpBig" data-wow-offset="100" data-wow-duration="1s">
 				<div class="emblem">
 					<img src="img/emblem.svg" alt="emblem">
 				</div>
@@ -118,10 +136,4 @@ metaKeywords: fait main wines, fait main, benoit touquette, napa valley cabernet
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script src="js/covervid.min.js"></script>
 	<script src="scripts/{{ manifest.main_js }}"></script>
-	<script>
-	 $('.grid').masonry({
-		 // options
-		 itemSelector: '.grid-item',
-	 });
-	</script>
 </body>

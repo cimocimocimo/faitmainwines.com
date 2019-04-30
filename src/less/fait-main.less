@@ -11,45 +11,21 @@
 }
 
 .grid{
-  clear: both;
+  .clearfix;
+}
 
-  .les {
-    padding: 0 0 0 5%;
-  }
-
-  .toyon{
-    margin-top: 200px;
-    padding: 0% 4% 0% 13%;
-  }
-
-  .sleeping{
-    padding: 0 0 0 10%;
-    left: 55px !important;
-  }
-
-  .benoit{
-    padding: 0 0 0 4%;
-    left: 23px !important;
-  }
-
-  .shauna{
-    margin-top: 270px;
-    padding: 0% 6% 0 10%;
-  }
-
-  .lionel{
-    margin-top: 10px;
-    padding: 0 0 3% 6%;
-    margin-bottom: 0;
-  }
+.grid-item,
+.grid-sizer {
+  width: 50%;
 }
 
 .grid-item {
-  width: 50%;
-  margin-bottom: 70px;
-  padding: 40px;
   position: relative;
   float: left;
+
+  &--full-width {
+    width: 100%;
+  }
 
   img{
     .opacity(40%);
@@ -92,102 +68,68 @@
       }
     }
   }
-}
 
-.spring,
-.winter,
-.people {
-  margin: 0 auto 120px;
-  position: relative;
+  /*
+  * Specific grid-item styles
+  */
 
-  a{
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    display: block;
+  // on index.html
 
-    img{
-      .opacity(40%);
-      .transition(0.2s);
-      backface-visibility: hidden;
-      -webkit-backface-visibility: hidden;
-    }
-
-    .ops{
-      position: absolute;
-      .opacity(0);
-    }
-
-    h2{
-      color: @grey_link;
-      text-align: center;
-      width: 100%;
-      margin: 25px auto;
-
-      hr{
-        width: 40px;
-        height: 2px;
-        background: @grey_link;
-        border: none
-      }
-    }
+  &__winter,
+  &__spring {
+    // margin: 0 auto 120px;
+    padding: 7.5% 20%;
   }
 
-  &:hover{
-    h2{
-      color: @blue;
-
-      hr{
-        background: @blue;
-      }
-    }
-
-    img{
-      .opacity(100%);
-    }
-  }
-}
-
-.spring,
-.winter {
-  width: 76%;
-  margin-bottom: 65px;
-}
-
-.people {
-  width: 52%;
-  margin: auto;
-  float: none;
-}
-
-.soon {
-  position: relative;
-  margin-top: 60px;
-  margin-bottom: 60px;
-
-  a{
-    img{
-      .transition(0.1s);
-    }
-
-    .ops{
-      position: absolute;
-      .opacity(0);
-    }
+  &__fulldraw {
+    padding: 0 8% 8% 16%;
   }
 
-  &:hover{
-    .ops{
-      .opacity(100%);
-    }
+  &__todeschini {
+    padding: 10% 15% 8.5% 0;
   }
-}
 
-.austin {
-  width: 52%;
-  margin: auto;
-  margin-bottom: 70px;
-  float: none;
+  &__las-piedras {
+    padding: 7% 3% 11% 12%;
+  }
+
+  //TODO: If the link to this page is restored we need to style this somehow.
+  &__toyon {
+    padding: 0% 4% 0% 13%;
+  }
+
+  &__sleeping {
+    padding: 0 12% 5% 7%;
+  }
+
+  &__people {
+    padding: 0 32.5%;
+  }
+
+  // on People.html
+
+  &__benoit {
+    padding: 0 0 0 4%;
+    left: 23px !important;
+  }
+
+  &__shauna {
+    margin-top: 270px;
+    padding: 0% 6% 0 10%;
+  }
+
+  &__lionel {
+    margin-top: 10px;
+    padding: 0 0 3% 6%;
+    margin-bottom: 0;
+  }
+
+  &__austin {
+    width: 52%;
+    margin: auto;
+    margin-bottom: 70px;
+    float: none;
+  }
 }
 
 .text {
