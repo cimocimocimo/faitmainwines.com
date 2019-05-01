@@ -1,0 +1,107 @@
+---
+title: McMahon Fulldraw Vineyard
+metaDescription: Wines by Napa Valley winemaker, Benoit Touquette.
+metaKeywords: fait main wines, fait main, benoit touquette, napa valley cabernet, napa cabernet, napa valley wine, cabernet sauvignon, chardonnay, napa red wine, napa valley chardonnay, napa valley winemaker, beckstoffer vineyard, las piedras vineyard, sleeping lady vineyard, toyon farm
+
+vintage: 2017
+ABV: 14.6
+newOak: 50
+numbProduced: 100
+---
+<head>
+  {{>head}}
+</head>
+
+<body>
+	<div class="loader-container">
+		<div class="loader">
+			<div class="logo">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<span class="expand"></span>
+		</div>
+	</div>
+	<div class="wrap">
+    {{>header}}
+		<div class="hero hero_ta">
+			<div class="covervid-wrapper desk">
+				<video muted="muted" class="covervid-video" autoplay loop poster="img/FullDraw-first-frame-video.jpg">
+				  <source src="video/St-Emilion-Header-NEW.webm" type="video/webm">
+				  <source src="video/St-Emilion-Header-NEW.mp4" type="video/mp4">
+			  </video>
+		  </div>
+			<div class="img_block mob img_block_ta"></div>
+		</div>
+		<div class="nav_wrap">
+			<div class="button_container" id="toggle">
+				<img src="img/Icons-ham.svg" alt="menu icon">
+				<span>MENU</span>
+			</div>
+			<div class="join"><a href="register.html">join the list</a></div>
+		</div>
+		<div class="container">
+			<div class="text wow fadeInUp fadeInUpBig" data-wow-duration="1s">
+				<h1>McMahon Fulldraw Vineyard<hr></h1>
+
+        <p>
+          A full draw is when an archer pulls the bowstring back as far as it
+          can go. It also describes the way Connor and Rebecca McMahon work. Few people
+          have the guts to buy 100 acres of vineyard land before they turn 30,
+          and this young couple’s determination, talent and humility are what
+          inspired me to collaborate with them on a Rhône-style blend for
+          Fait-Main.
+        </p>
+
+        <p>
+          The McMahon Fulldraw Vineyard is in the Templeton Gap area on the
+          west side of Paso Robles – right next to Booker Vineyards, where
+          Connor used to work with Eric Jensen. The vines here perch on
+          calcareous limestone hillsides, up to a 34-degree slope. Drainage is
+          phenomenal and some blocks look like the moon . . . pure, solid white
+          rock. Massive diurnal shifts in this part of Paso let the grapes
+          develop sugar and phenolics without losing their freshness. Connor
+          and Rebecca manage canopies and crop yields assiduously to capture
+          this unique terroir in the Grenache, Syrah and Mourvèdre for our
+          blend.
+        </p>
+
+        <p>
+          Vibrancy, mouthfeel, and red fruit leaping out of the glass . . . it
+          is all there. And full on delicious.
+        </p>
+
+			</div>
+			<div class="info wow fadeInUp fadeInUpBig" data-wow-duration="1s">
+				<div class="emblem">
+					<img src="img/emblem.svg" alt="emblem">
+				</div>
+				<h3>GSM, McMahon Fulldraw Vineyard</h3>
+				<p class="half half_big"><span>{{ABV}}</span>% ABV</p>
+				<p class="half half_big"><span>{{numbProduced}}</span>cases</p>
+				<p class="half half_big"><span>{{vintage}}</span>vintage</p>
+				<p class="half half_big"><span>{{newOak}}</span>% new French Oak</p>
+			</div>
+			<div class="slide wow fadeInUp fadeInUpBig" data-wow-duration="1s">
+        <div class="slide_container">
+				  <div class="slide_inner main-carousel">
+            <img class="slide_img carousel-cell" src="img/fulldraw-vineyard-gallery/1_FullDrawVineyard06.jpg" alt="Sandstone boulder">
+            <img class="slide_img carousel-cell" src="img/fulldraw-vineyard-gallery/2_FullDrawVineyard10.jpg" alt="Trees">
+            <img class="slide_img carousel-cell" src="img/fulldraw-vineyard-gallery/3_FullDrawVineyard09.jpg" alt="Grape vines">
+            <img class="slide_img carousel-cell" src="img/fulldraw-vineyard-gallery/4_FullDrawVineyard11.jpg" alt="Bark close up">
+            <img class="slide_img carousel-cell" src="img/fulldraw-vineyard-gallery/5_FullDrawVineyard08.jpg" alt="Grapes on soil">
+				  </div>
+				  <div class="slide_overlay" id="closeIt"></div>
+			  </div>
+      </div>
+			<div class="emblem">
+				<img src="img/emblem.svg" alt="emblem">
+			</div>
+		</div>
+    {{>footer}}
+	</div>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/flickity.pkgd.min.js"></script>
+	<script src="js/covervid.min.js"></script>
+	<script src="scripts/{{manifest.main_js}}"></script>
+</body>
