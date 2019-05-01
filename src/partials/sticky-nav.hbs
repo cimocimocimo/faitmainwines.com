@@ -1,0 +1,15 @@
+<div class="nav_wrap">
+	<a class="button_container js-toggle" href="#site-nav-overlay-menu">
+		<img src="img/Icons-ham.svg" alt="menu icon">
+		<span>MENU</span>
+	</a>
+  {{#if isAccountPage}}
+    <div class="accountLinks" data-vsPlugin="accountLinks"></div>
+  {{else if showAccountLink}}
+    <div class="join"><a href="account.html">your account</a></div>
+  {{else}}
+    {{#unless hideRegister}}
+      <div class="join"><a href="register.html">join the list</a></div>
+    {{/if}}
+  {{/if}}
+</div>

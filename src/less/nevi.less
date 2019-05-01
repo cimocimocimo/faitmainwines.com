@@ -14,8 +14,8 @@
   top: 22px;
   z-index: 1000;
 }
-.close-button {
 
+.close-button {
   img {
     display: block;
     height: 17px;
@@ -47,7 +47,9 @@
 	background: @white;
 	.opacity(100%);
 	z-index: 9990;
+
 	.button_container {
+    display: block;
 		position: relative;
 		max-width: 22px;
 		height: 27px;
@@ -58,14 +60,6 @@
 		margin-left: 50px;
 		&:hover {
 			opacity: .7;
-		}
-		.fa{
-			font-size: 33px;
-			color: @grey_dark;
-			.transition;
-			&:hover{
-				color: @grey_hover;
-			}
 		}
 	}
 	span {

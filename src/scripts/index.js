@@ -1,7 +1,12 @@
 import $ from 'jquery'
 import WOW from 'WOW'
 
-var $win = $(window)
+const $win = $(window),
+      $doc = $(document),
+      $body = $('body'),
+
+      // Key Codes
+      ESC = 27
 
 // required to call before document ready event
 ;(function () {
@@ -11,12 +16,34 @@ var $win = $(window)
   }
 }())
 
-// Helpers
+///////////////////////////////////////////////////////////////////////////////
+//                                  Helpers                                  //
+///////////////////////////////////////////////////////////////////////////////
+
 function getPageFilename () {
   return window.location.pathname.split('/').pop()
 }
 
-// Init functions
+/*
+ * Only runs the array of functions if they have not been run in the past
+ * 24 hours on the currently loaded page.
+ */
+function runOncePerPagePerDay (runList) {
+  var cookieName = getPageFilename() + '-loadedAlready'
+
+  if ($.cookie(cookieName) !== 'YES') {
+    for (var i = 0; i < runList.length; i++) {
+      runList[i]()
+    }
+
+    $.cookie(cookieName, 'YES', { expires: 1 })
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//                               Init functions                              //
+///////////////////////////////////////////////////////////////////////////////
+
 function fullscreen () {
   var winX = $win.width()
   var winY = $win.height()
@@ -79,51 +106,48 @@ function wowInit () {
   new WOW().init()
 }
 
-/*
- * Only runs the array of functions if they have not been run in the past
- * 24 hours on the currently loaded page.
- */
-function runOncePerPagePerDay (runList) {
-  var cookieName = getPageFilename() + '-loadedAlready'
+function initOverlayMenus () {
+  var $toggles = $('.js-toggle'),
+      $overlays = $('.js-overlay'),
+      $closers = $('.js-close-overlay')
 
-  if ($.cookie(cookieName) !== 'YES') {
-    for (var i = 0; i < runList.length; i++) {
-      runList[i]()
-    }
-
-    $.cookie(cookieName, 'YES', { expires: 1 })
+  function closeOverlays () {
+    $overlays.removeClass('open')
+    $toggles.removeClass('active')
+    $body.removeClass('no-scroll')
   }
+
+  function openOverlay (overlayId) {
+    $(overlayId).addClass('open')
+    $body.addClass('no-scroll')
+  }
+
+  $toggles.click(function (event) {
+    event.preventDefault()
+
+    var $toggle = $(this),
+        overlayId = $toggle.attr('href')
+
+    $toggle.addClass('active')
+    openOverlay(overlayId)
+  })
+
+  $closers.click(function (event) {
+    event.preventDefault()
+
+    closeOverlays()
+  })
+
+  $doc.keyup(function (event) {
+    if (event.keyCode === ESC) closeOverlays()
+  })
 }
 
-// On DOM ready
+///////////////////////////////////////////////////////////////////////////////
+//                                On DOM ready                               //
+///////////////////////////////////////////////////////////////////////////////
+
 $(function () {
-  // open the overlay menu
-  $('#toggle').click(function () {
-    $(this).toggleClass('active')
-    $('#overlay').toggleClass('open')
-    // prevent the body from scrolling
-    $('body').addClass('no-scroll')
-  })
-
-  // close overlay menu
-  $('.js-close-overlay').click(function (event) {
-    event.preventDefault()
-    $('#toggle').toggleClass('active')
-    $('#overlay').toggleClass('open')
-    // allow body scrolling again
-    $('body').removeClass('no-scroll')
-  })
-
-  $('#foot_toggle').click(function () {
-    $(this).toggleClass('active')
-    $('#foot_overlay').toggleClass('open')
-  })
-
-  $('#foot_close').click(function () {
-    $('#foot_toggle').toggleClass('active')
-    $('#foot_overlay').toggleClass('open')
-  })
-
   $win.scroll(function () {
     $('.covervid-wrapper , .img_block')
       .css('opacity', 1 - $win.scrollTop() / 800)
@@ -146,6 +170,8 @@ $(function () {
   masonryInit()
   heroFullscreenInit()
   carouselInit()
+  initOverlayMenus()
+
   runOncePerPagePerDay([wowInit])
 })
 
