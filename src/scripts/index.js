@@ -1,12 +1,12 @@
 import $ from 'jquery'
 import WOW from 'WOW'
 
-const $win = $(window),
-      $doc = $(document),
-      $body = $('body'),
+const $win = $(window)
+const $doc = $(document)
+const $body = $('body')
 
-      // Key Codes
-      ESC = 27
+// Key Codes
+const ESC = 27
 
 // required to call before document ready event
 ;(function () {
@@ -16,15 +16,15 @@ const $win = $(window),
   }
 }())
 
-///////////////////////////////////////////////////////////////////////////////
-//                                  Helpers                                  //
-///////////////////////////////////////////////////////////////////////////////
+/**
+ *  Helpers
+ */
 
 function getPageFilename () {
   return window.location.pathname.split('/').pop()
 }
 
-/*
+/**
  * Only runs the array of functions if they have not been run in the past
  * 24 hours on the currently loaded page.
  */
@@ -40,9 +40,9 @@ function runOncePerPagePerDay (runList) {
   }
 }
 
-///////////////////////////////////////////////////////////////////////////////
-//                               Init functions                              //
-///////////////////////////////////////////////////////////////////////////////
+/**
+ *  Init functions
+ */
 
 function fullscreen () {
   var winX = $win.width()
@@ -107,9 +107,9 @@ function wowInit () {
 }
 
 function initOverlayMenus () {
-  var $toggles = $('.js-toggle'),
-      $overlays = $('.js-overlay'),
-      $closers = $('.js-close-overlay')
+  var $toggles = $('.js-toggle')
+  var $overlays = $('.js-overlay')
+  var $closers = $('.js-close-overlay')
 
   function closeOverlays () {
     $overlays.removeClass('open')
@@ -125,8 +125,8 @@ function initOverlayMenus () {
   $toggles.click(function (event) {
     event.preventDefault()
 
-    var $toggle = $(this),
-        overlayId = $toggle.attr('href')
+    var $toggle = $(this)
+    var overlayId = $toggle.attr('href')
 
     $toggle.addClass('active')
     openOverlay(overlayId)
@@ -143,9 +143,9 @@ function initOverlayMenus () {
   })
 }
 
-///////////////////////////////////////////////////////////////////////////////
-//                                On DOM ready                               //
-///////////////////////////////////////////////////////////////////////////////
+/**
+ *  On DOM ready
+ */
 
 $(function () {
   $win.scroll(function () {
