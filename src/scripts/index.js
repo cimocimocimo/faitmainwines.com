@@ -153,7 +153,7 @@ $(function () {
       .css('opacity', 1 - $win.scrollTop() / 800)
   })
 
-  $('.nav_wrap').sticky({
+  $('.js-sticky-nav').sticky({
     topSpacing: 0
   })
 
