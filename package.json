@@ -1,10 +1,13 @@
 {
   "author": "Aaron Cimolini <aaron@cimolini.com>",
   "browserslist": "> 1%, last 4 versions, Firefox ESR, Opera 12.1",
-  "dependencies": {},
+  "dependencies": {
+    "core-js": "3"
+  },
   "devDependencies": {
-    "@babel/core": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
     "autoprefixer": "^9.1.5",
     "babel-loader": "^8.0.2",
     "browser-sync": "^2.18.8",
@@ -34,5 +37,20 @@
     "html": "NODE_ENV=${NODE_ENV:=production} bin/compile-html",
     "start": "NODE_ENV=development bin/start"
   },
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "usage",
+          "corejs": "3.0.0",
+          "targets": {
+            "esmodules": true,
+            "ie": "11"
+          }
+        }
+      ]
+    ]
+  }
 }
